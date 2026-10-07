@@ -566,7 +566,7 @@
     .ltv-lc .lc-card { width: 214px; margin-top: 40px; }
     .ltv-lc .lc-arrow { padding: 0 8px; }
     .ltv-lc .sfo { width: 288px; }
-    .ltv-lc .sfo.sm { width: 212px; }
+    .ltv-lc .sfo.sm { width: 252px; }
     .ltv-lc .lc-arrow { margin-top: 92px; }
     .ltv-lc .sfo-h { position: relative; }
     .ltv-lh { display: flex; justify-content: space-between; align-items: center; gap: 8px; white-space: nowrap; }
@@ -897,6 +897,7 @@
     .kr-badge.kr-snap { padding: 0; background: none; border-radius: 0; max-width: none; width: 0; height: 0; overflow: visible; }
     .kr-snap > .kr { width: max-content; white-space: nowrap; transform: scale(.72); transform-origin: 0 0; }
     .kr-ghost, .kr-ghost * { transition: none !important; }
+    .ltv-born { color: #076b54; background: #e6f8f2; border-radius: 8px; padding: 0 6px; font-weight: 700; white-space: nowrap; }
     /* shared review copy: a fixed badge on every slide says it awaits validation */
     .val-flag { position: fixed; top: 14px; left: 50%; transform: translateX(-50%); z-index: 1000; display: inline-flex; align-items: center; gap: 8px;
       background: #fff7ed; color: #b4521f; border: 1px solid #f6c9a8; border-radius: 999px; padding: 6px 14px; font-family: Lato, sans-serif;
@@ -1079,6 +1080,7 @@
             <div class="pmk-mini pmk-mform below" style="--d:1.9s"><b class="pmk-mh">Whitepaper · Barometer</b><span class="pmk-mf"><small>Name</small><span><em class="pmk-type" style="--d:2.15s; --t:.35s; --n:13">Claire Martin</em></span></span><span class="pmk-mf"><small>Email</small><span><em class="pmk-type" style="--d:2.50s; --t:.4s; --n:22">c.martin@entreprise.fr</em></span></span><span class="pmk-mck"><i><b class="pmk-pop" style="--d:2.85s">✓</b></i>I agree to be contacted</span><span class="pmk-mb pmk-press" style="--d:2.95s">Download</span></div>
             <div class="pmk-mini pmk-mvideo below" style="--d:3.4s"><div class="pmk-mv-top"><b>On call</b><span>08:42</span></div><div class="pmk-mv-main"><span class="pmk-mav"><i data-lucide="user-round"></i></span><small>Claire Martin</small><span class="pmk-mv-self">You · sales rep</span></div><div class="pmk-mv-bar"><i><i data-lucide="mic"></i></i><i><i data-lucide="video"></i></i><i class="end"><i data-lucide="phone-off"></i></i></div></div>
             <div class="pmk-mini pmk-mform below" style="--d:6.7s"><b class="pmk-mh">Sign-up · Webinar 2027</b><span class="pmk-mf"><small>Name</small><span><em class="pmk-type" style="--d:6.95s; --t:.35s; --n:13">Claire Martin</em></span></span><span class="pmk-mf"><small>Email</small><span><em class="pmk-type" style="--d:7.30s; --t:.4s; --n:22">c.martin@entreprise.fr</em></span></span><span class="pmk-mck"><i><b class="pmk-pop" style="--d:7.65s">✓</b></i>I agree to be contacted</span><span class="pmk-mb pmk-press" style="--d:7.75s">Register</span></div>
+            <div class="pmk-mini pmk-mbadge below" style="--d:8.55s"><span class="pmk-mbh"></span><span class="pmk-mav"><i data-lucide="user-round"></i></span><b>Claire Martin</b><small>Entreprise SA</small><span class="pmk-mev">Breakfast</span><i class="pmk-mqr"></i><span class="pmk-mscan" style="--d:8.85s"></span><span class="pmk-mok pmk-pop" style="--d:9.40s">✓</span></div>
             <div class="sfc-h"><span class="sfc-ic contact"><i data-lucide="contact"></i></span><div><div class="sfo-k">Contact</div><div class="lch-t">Claire Martin</div></div></div>
             <div class="lch-s">its campaigns</div>
             <div class="sx-chips">
@@ -1086,29 +1088,31 @@
               <span class="chip2 pmk-pop" style="--d:3.25s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Whitepaper</span>
               <span class="chip2 sal pmk-pop" style="--d:4.75s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Video outreach</span>
               <span class="chip2 pmk-pop" style="--d:8.05s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span>
+              <span class="chip2 pmk-pop" style="--d:9.6s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Client breakfast</span>
             </div>
           </div>
           <div class="lc-arrow pmk-in" style="--d:4.95s"><span class="al">contact role</span><span class="aa pmk-flash" style="--d:5.15s">&rarr;</span></div>
           <div class="sfo pmk-in" style="--d:5.2s">
-            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity #1</div><div class="sfo-n">Entreprise SA</div><div class="sfo-s">€48,000 · created</div></div></div>
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity #1</div><div class="sfo-n">Entreprise SA</div><div class="sfo-s">€48,000 · <span class="ltv-born pmk-pop" style="--d:5.45s">created 14 March 2026</span></div></div></div>
             <div class="sfo-lh ltv-lh"><span>Campaign Influence (<span data-pm-start="0" data-pm-at="5.5,5.8,6.1">3</span>)</span><span class="ltv-flock pmk-pop" style="--d:6.4s"><i data-lucide="lock"></i>Influence frozen</span></div>
             <div class="sfo-list">
                 <div class="sfo-r pmk-row" style="--d:5.5s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Trade show</span><em>Claire Martin</em></div>
                 <div class="sfo-r pmk-row" style="--d:5.8s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Whitepaper</span><em>Claire Martin</em></div>
                 <div class="sfo-r pmk-row" style="--d:6.1s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Video outreach</span><em>Claire Martin</em></div>
                 <div class="sfo-r pmk-row ltv-no" style="--d:8.3s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span><em>not added</em></div>
+                <div class="sfo-r pmk-row ltv-no" style="--d:9.85s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Client breakfast</span><em>not added</em></div>
             </div>
           </div>
-          <div class="lc-arrow pmk-in" style="--d:8.6s"><span class="al">next opportunity</span><span class="aa pmk-flash" style="--d:8.80s">&rarr;</span></div>
-          <div class="sfo sm pmk-in" style="--d:8.8s">
+          <div class="lc-arrow pmk-in" style="--d:10.1s"><span class="al">next opportunity</span><span class="aa pmk-flash" style="--d:10.30s">&rarr;</span></div>
+          <div class="sfo sm pmk-in" style="--d:10.3s">
             <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity #2</div><div class="sfo-n">Entreprise SA</div><div class="sfo-s">upsell · €30,000</div></div></div>
-            <div class="sfo-lh">Campaign Influence (<span data-pm-start="0" data-pm-at="9.1">1</span>)</div>
+            <div class="sfo-lh">Campaign Influence (<span data-pm-start="0" data-pm-at="10.6,10.9">2</span>)</div>
             <div class="sfo-list">
-                <div class="sfo-r pmk-row" style="--d:9.1s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span><em>Claire Martin</em></div>
+                <div class="sfo-r pmk-row" style="--d:10.6s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span><em>Claire Martin</em></div>
+                <div class="sfo-r pmk-row" style="--d:10.9s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Client breakfast</span><em>Claire Martin</em></div>
             </div>
           </div>
         </div>
-        <div class="ltv-pill pmk-pop" style="--d:9.5s"><span>Customer value (LTV)</span><b data-pm-to="78000" data-pm-fmt="eur0" data-pm-delay="9.6" data-pm-dur=".8">€78,000</b><small>€48,000 + €30,000</small></div>
       </div>
       <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
     </section>
