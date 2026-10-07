@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <link rel="alternate" hreflang="en" href="https://ayming-france.github.io/performance-marketing-validations-4c8041e5/">
+  <link rel="alternate" hreflang="fr" href="https://ayming-france.github.io/performance-marketing-validations-4c8041e5/fr/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposals for the contribution model · Ayming France · to be validated</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://ayming-france.github.io/assets/engine/slides.css">
+  <style>
+    :root {
+      --ay-primary: #11a9e6;
+      --ay-accent: #0da4e8;
+      --ay-dark: #00456d;
+      --ay-success: #0ab38c;
+      --ay-warning: #f59e0b;
+      --ay-danger: #ef4444;
+      --ay-text: #0f172a;
+      --ay-gray: #6b7280;
+      --ay-light: #9ca3af;
+      --ay-bg-subtle: #eef2f6;
+      --ay-bg-light: #f8fafc;
+    }
+
+    /* Predictable sizing: no engine zoom, design at true size */
+    .slide-inner.insights { transform: none; max-width: 1180px; padding: 40px 56px; }
+    .slide-inner.insights.wide { max-width: 1560px; padding: 36px 28px; }
+    .slide-title.compact { margin-bottom: 28px; font-size: 34px; }
+    .slide-eyebrow {
+      text-transform: uppercase; letter-spacing: 2px; font-size: 12px;
+      font-weight: 700; color: var(--ay-primary); margin-bottom: 10px;
+    }
+    .slide-subtitle { font-size: 17px; color: var(--ay-gray); font-weight: 500; margin: 0 0 30px 0; line-height: 1.5; max-width: 880px; }
+    .footnote { font-size: 12px; color: var(--ay-light); margin-top: 18px; line-height: 1.55; max-width: 940px; }
+    .cover-credit { margin-top: 22px; font-size: 13px; font-weight: 700; color: #fff; letter-spacing: 0.3px; opacity: 0.9; }
+    .deck-credit { position: fixed; bottom: 16px; left: 28px; font-size: 11px; font-weight: 700; color: var(--ay-light); letter-spacing: 0.3px; z-index: 90; pointer-events: none; }
+
+    /* ===== Mission / bridge (big centered quote) ===== */
+    .mission-quote { font-size: 40px; font-weight: 700; color: var(--ay-dark); line-height: 1.3; max-width: 1000px; margin: 0 auto; }
+    .mission-quote b { color: var(--ay-primary); }
+    .mission-sub { font-size: 18px; color: var(--ay-gray); font-weight: 500; margin-top: 28px; max-width: 760px; margin-left:auto; margin-right:auto; }
+
+    /* proposal quote slide (white bg, blue highlights) */
+    .qquote { font-size: 34px; font-weight: 700; line-height: 1.5; color: var(--ay-dark); max-width: 1040px; margin: 0 auto; }
+    .qquote b { color: var(--ay-primary); font-weight: 800; }
+
+    /* ===== SLIDE: socle (single horizontal flow, light cards, no filled panel) ===== */
+    .socle-flow { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 8px auto 0; width: 100%; max-width: 1500px; }
+    .sx { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 3px 12px rgba(0,0,0,.06); padding: 16px 18px; text-align: left; }
+    .sx.cap { width: 244px; }
+    .sx.enr { width: 250px; }
+    .sx-tag { font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 800; color: var(--ay-primary); margin-bottom: 10px; }
+    .sx-grp { font-size: 9.5px; text-transform: uppercase; letter-spacing: .8px; color: var(--ay-gray); font-weight: 700; margin: 11px 0 5px; }
+    .sx-grp.first { margin-top: 0; }
+    .sx-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip2 { font-size: 10.5px; background: #eff6ff; color: var(--ay-dark); border-radius: 6px; padding: 3px 8px; font-weight: 600; }
+    .sx-rule { padding: 7px 0; border-bottom: 1px solid #f1f5f9; }
+    .sx-rule:last-child { border-bottom: none; padding-bottom: 0; }
+    .sx-rule:first-of-type { padding-top: 0; }
+    .sx-rule b { display: block; font-size: 12.5px; color: var(--ay-dark); }
+    .sx-rule span { font-size: 10.5px; color: var(--ay-gray); line-height: 1.3; }
+    .sx-node { border: 1px solid #e5e7eb; border-radius: 11px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.05); padding: 16px 16px; font-weight: 800; color: var(--ay-dark); font-size: 14px; text-align: center; min-width: 96px; }
+    .sx-node small { display: block; font-weight: 600; font-size: 10px; color: var(--ay-gray); margin-top: 3px; }
+    .sx-sf { border: 1.5px dashed var(--ay-primary); border-radius: 13px; background: #f7fcff; padding: 18px 16px 13px; position: relative; }
+    .sx-sf-label { position: absolute; top: -9px; left: 14px; background: #fff; padding: 0 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ay-primary); font-weight: 800; }
+    .sx-sf-inner { display: flex; align-items: center; gap: 9px; }
+    .sx-person { border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); background: #fff; border-radius: 9px; padding: 9px 13px; font-weight: 800; color: var(--ay-primary); font-size: 14px; text-align: center; width: 124px; min-height: 86px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-sizing: border-box; }
+    .sx-person small { display: block; font-weight: 600; font-size: 10px; color: var(--ay-gray); margin-top: 3px; line-height: 1.25; }
+    .sx-arrow { font-size: 22px; color: var(--ay-light); font-weight: 700; flex: none; }
+    .sx-mini { font-size: 15px; color: var(--ay-light); font-weight: 700; }
+    /* enrichment: 3 boxes wrapped in the Salesforce-style dashed container */
+    .enr-wrap { display: flex; flex-direction: column; gap: 7px; width: 250px; padding-top: 18px; }
+    .eb { border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; box-shadow: 0 1px 5px rgba(0,0,0,.04); padding: 8px 11px; text-align: left; }
+    .eb b { display: block; font-size: 12px; color: var(--ay-dark); }
+    .eb span { font-size: 10px; color: var(--ay-gray); line-height: 1.3; }
+
+    /* ===== SLIDE: TCV problem (faults + distribution hero) ===== */
+    .faults { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 820px; margin: 0 auto 4px; width: 100%; }
+    .fault { background: #fff; border: 1px solid #fde2e2; border-left: 4px solid var(--ay-danger); border-radius: 12px; padding: 16px 20px; text-align: left; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .fault .ft { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 800; color: var(--ay-danger); margin-bottom: 6px; }
+    .fault .fb { font-size: 15px; color: var(--ay-text); font-weight: 500; line-height: 1.45; }
+    .fault .fb b { color: var(--ay-dark); font-weight: 800; }
+    /* three counts (TCV fails on 3 points) */
+    .counts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; width: 100%; max-width: 1080px; margin: 10px auto 0; position: relative; }
+    .counts::before, .counts::after { content: ""; position: absolute; top: 12px; bottom: 12px; width: 1px; background: #e5e7eb; }
+    .counts::before { left: 33.333%; }
+    .counts::after { left: 66.667%; }
+    .count { padding: 4px 36px; text-align: left; }
+    .count:first-child { padding-left: 0; }
+    .count:last-child { padding-right: 0; }
+    .count .cnum-big { font-size: 92px; font-weight: 100; line-height: .82; letter-spacing: -4px; color: var(--ay-danger); margin-bottom: 14px; font-variant-numeric: tabular-nums; }
+    .count .ct { font-size: 19px; font-weight: 800; color: var(--ay-dark); margin-bottom: 12px; line-height: 1.22; }
+    .count .cb { font-size: 13.5px; color: var(--ay-text); line-height: 1.55; }
+    .cycle-wrap { margin-top: 26px; width: 100%; max-width: 880px; margin-left:auto; margin-right:auto; }
+    .cycle-stats { display: flex; justify-content: center; gap: 56px; margin-bottom: 18px; }
+    .cs { text-align: center; }
+    .cs .csn { font-size: 46px; font-weight: 800; line-height: 1; color: var(--ay-dark); }
+    .cs .csn small { font-size: 18px; font-weight: 700; color: var(--ay-gray); }
+    .cs .csl { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--ay-gray); font-weight: 700; margin-top: 7px; }
+    .cs.hi .csn { color: var(--ay-primary); }
+    .cycle-bar { position: relative; height: 14px; border-radius: 8px; margin: 32px 6px 8px; background: linear-gradient(90deg,#0ab38c 0%,#11a9e6 22%,#f59e0b 55%,#ef4444 100%); }
+    .cmark { position: absolute; top: -7px; width: 2px; height: 28px; background: var(--ay-dark); transform: translateX(-1px); }
+    .cmark span { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; font-size: 11px; font-weight: 700; color: var(--ay-dark); }
+    .cmark.up span { bottom: 32px; }
+    .cmark.dn span { top: 32px; color: var(--ay-gray); }
+    .cycle-annot { font-size: 14px; font-style: italic; color: var(--ay-gray); text-align: center; margin-top: 44px; line-height: 1.5; }
+
+    /* ===== SLIDE: chain (pipeline nodes) ===== */
+    .chain-flow { display: flex; align-items: flex-start; justify-content: center; gap: 0; margin-top: 18px; width: 100%; max-width: 1040px; margin-left:auto; margin-right:auto; }
+    .chain-node { flex: 0 0 auto; width: 132px; text-align: center; position: relative; z-index: 2; }
+    .chain-node .cn-num { width: 52px; height: 52px; border-radius: 50%; background: #fff; border: 2px solid var(--ay-primary); color: var(--ay-primary); font-weight: 700; font-size: 18px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 10px; font-family: Georgia, serif; }
+    .chain-node .cn-name { font-size: 14px; font-weight: 800; color: var(--ay-dark); display: block; }
+    .chain-node .cn-sub { font-size: 11px; color: var(--ay-gray); margin-top: 3px; }
+    .chain-node.own .cn-num { background: linear-gradient(135deg,#11a9e6,#0ab38c); border: none; color: #fff; transform: scale(1.18); box-shadow: 0 6px 18px rgba(17,169,230,.35); }
+    .chain-node.own .cn-name { color: var(--ay-primary); }
+    .chain-node.later .cn-num { background: var(--ay-bg-light); border-color: var(--ay-light); color: var(--ay-light); border-style: dashed; }
+    .chain-node.later .cn-name { color: var(--ay-light); }
+    .chain-link { flex: 1; height: 2px; background: var(--ay-primary); margin-top: 25px; position: relative; }
+    .chain-link.dashed { background: repeating-linear-gradient(90deg,var(--ay-light) 0 5px,transparent 5px 11px); }
+    .chain-link::after { content: ""; position: absolute; right: -1px; top: 50%; transform: translateY(-50%); border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 6px solid var(--ay-primary); }
+    .chain-link.dashed::after { border-left-color: var(--ay-light); }
+    /* coda: concluding statement under a thin rule (house idiom, NOT a box) */
+    .coda { margin: 38px auto 0; padding-top: 20px; border-top: 2px solid var(--ay-dark); max-width: 860px; font-size: 16px; line-height: 1.55; color: var(--ay-text); text-align: center; }
+    .coda b { color: var(--ay-dark); font-weight: 800; }
+    .coda em { color: var(--ay-primary); font-style: normal; font-weight: 800; }
+
+    /* slide: measurement chain (square boxes + ownership progress line) */
+    .relay { width: 100%; max-width: 1120px; margin: 0 auto; text-align: left; }
+    .relay-title { font-size: 40px; font-weight: 800; line-height: 1.16; margin: 0 0 42px; text-align: center; background: linear-gradient(90deg,#11a9e6,#0ab38c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .relay-row { display: flex; align-items: stretch; gap: 12px; width: 100%; margin: 0; }
+    .rbox { flex: 1; background: #f1f4f7; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px 12px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 112px; }
+    .rbox .rt { font-weight: 800; color: var(--ay-dark); font-size: 16px; }
+    .rbox .rs { font-size: 11.5px; color: var(--ay-gray); margin-top: 6px; }
+    .rbox.own { background: var(--ay-primary); border-color: var(--ay-primary); }
+    .rbox.own .rt { color: #fff; }
+    .rbox.own .rs { color: rgba(255,255,255,.9); }
+    .rbox.later { background: #fff; border-style: dashed; border-color: #cbd5e1; }
+    .rbox.later .rt { color: var(--ay-light); }
+    .rbox.later .rs { color: var(--ay-light); }
+    .rarrow { display: flex; align-items: center; color: var(--ay-light); font-size: 20px; font-weight: 700; flex: none; }
+    .relay-zones { display: flex; gap: 14px; width: 100%; margin: 16px 0 0; min-height: 48px; }
+    .zmkt { flex: 4; }
+    .zsales { flex: 1; }
+    .zline { display: block; height: 3px; border-radius: 2px; background: var(--ay-primary); }
+    .zsales .zline { background: repeating-linear-gradient(90deg, #cbd5e1 0 6px, transparent 6px 12px); height: 2px; margin-top: .5px; }
+    .zlabel { display: block; margin-top: 11px; font-size: 11.5px; font-weight: 800; letter-spacing: 1.3px; text-transform: uppercase; color: var(--ay-dark); }
+    .zsales .zlabel { color: var(--ay-gray); text-align: right; }
+    .relay-foot { font-size: 15px; color: var(--ay-gray); line-height: 1.6; margin: 40px 0 0; max-width: 1000px; text-align: left; }
+    .relay-foot b { color: var(--ay-dark); font-weight: 800; }
+
+    /* slide: OKR (green objective + two blue key results) */
+    .okr { width: 100%; max-width: 1060px; margin: 0 auto; }
+    .okr-obj { background: #e7f7ef; border-radius: 14px; padding: 24px 30px; text-align: left; margin-bottom: 22px; }
+    .okr-obj .ol { font-size: 12.5px; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 800; color: var(--ay-success); margin-bottom: 8px; }
+    .okr-obj .ot { font-size: 21px; font-weight: 700; color: var(--ay-dark); line-height: 1.42; }
+    .okr-krs { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .kr { background: #eaf3fc; border-radius: 14px; padding: 22px 26px; text-align: left; }
+    .kr .kl { font-size: 12.5px; color: var(--ay-primary); font-weight: 600; margin-bottom: 8px; letter-spacing: .3px; }
+    .kr .kl b { font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+    .kr .kh { font-size: 22px; font-weight: 800; color: var(--ay-dark); margin-bottom: 6px; line-height: 1.2; }
+    .kr .kdef { font-size: 14.5px; color: var(--ay-dark); font-weight: 600; margin-bottom: 4px; }
+    .kr .ks { font-size: 13.5px; color: var(--ay-gray); line-height: 1.5; }
+    .okr-foot { margin-top: 24px; padding-top: 18px; border-top: 1px solid #e5e7eb; font-size: 14px; color: var(--ay-gray); text-align: left; }
+    .okr-foot b { color: var(--ay-dark); }
+
+    /* small KR badge top-left of a diagram slide (links the diagram to its key result) */
+    .kr-badge { position: absolute; top: 40px; left: 80px; background: #eaf3fc; border-radius: 12px; padding: 11px 16px; max-width: 380px; text-align: left; z-index: 6; }
+    .kr-badge:not(.kr-snap) .kl { font-size: 11px; color: var(--ay-primary); font-weight: 600; margin-bottom: 5px; letter-spacing: .3px; }
+    .kr-badge:not(.kr-snap) .kl b { font-weight: 800; text-transform: uppercase; letter-spacing: .8px; }
+    .kr-badge:not(.kr-snap) .kh { font-size: 16px; font-weight: 800; color: var(--ay-dark); margin-bottom: 3px; line-height: 1.2; }
+    .kr-badge:not(.kr-snap) .kdef { font-size: 12.5px; font-weight: 600; color: var(--ay-dark); margin-bottom: 3px; line-height: 1.35; }
+    .kr-badge:not(.kr-snap) .ks { font-size: 12px; color: var(--ay-gray); line-height: 1.4; }
+
+    /* ===== SLIDE: two lenses (compare floor/ceiling) ===== */
+    .lens-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; width: 100%; max-width: 960px; margin: 0 auto; }
+    .lens { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 26px 28px; box-shadow: 0 4px 16px rgba(0,0,0,.06); text-align: left; position: relative; }
+    .lens.floor { border-top: 5px solid var(--ay-primary); }
+    .lens.ceiling { border-top: 5px solid var(--ay-success); }
+    .lens .lu { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 4px; }
+    .lens.floor .lu { color: var(--ay-primary); }
+    .lens.ceiling .lu { color: var(--ay-success); }
+    .lens .lt { font-size: 24px; font-weight: 800; color: var(--ay-dark); margin-bottom: 14px; }
+    .lens .lb { font-size: 14.5px; color: var(--ay-text); line-height: 1.55; }
+    .lens .lb b { color: var(--ay-dark); }
+    .lens .lpurpose { margin-top: 18px; padding-top: 14px; border-top: 1px dashed #e5e7eb; font-size: 13.5px; color: var(--ay-text); }
+    .lens .lpurpose b { font-weight: 800; }
+    .lens.floor .lpurpose b { color: var(--ay-primary); }
+    .lens.ceiling .lpurpose b { color: var(--ay-success); }
+    .lens .ltag { display: inline-block; margin-top: 16px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; padding: 6px 14px; border-radius: 20px; }
+    .lens.floor .ltag { background: #e0f4fe; color: var(--ay-dark); }
+    .lens.ceiling .ltag { background: #e6f8f2; color: #076b54; }
+
+    /* ===== SLIDE: architectures (two tracks + warning note) ===== */
+    .track { display: flex; align-items: center; gap: 9px; margin: 0 auto 14px; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
+    .track-label { min-width: 120px; text-align: right; font-size: 13px; font-weight: 800; padding-right: 6px; }
+    .track-label small { display: block; font-size: 10px; font-weight: 600; color: var(--ay-light); text-transform: uppercase; letter-spacing: 1px; }
+    .track-label.s { color: var(--ay-primary); }
+    .track-label.i { color: var(--ay-success); }
+    .astep { border: 1px solid #e5e7eb; border-radius: 9px; padding: 10px 13px; background: #fff; box-shadow: 0 1px 6px rgba(0,0,0,.04); font-size: 12.5px; font-weight: 600; color: var(--ay-dark); }
+    .astep.end-s { border: 2px solid var(--ay-primary); color: var(--ay-primary); font-weight: 800; }
+    .astep.end-i { border: 2px solid var(--ay-success); color: #076b54; font-weight: 800; }
+    .aarrow { font-size: 16px; color: var(--ay-light); }
+    /* ===== SLIDE: campaign influence (fan-in, membership) ===== */
+    .infl { display: flex; align-items: center; justify-content: center; margin: 44px auto 0; max-width: 1120px; }
+    .infl-node { border-radius: 13px; padding: 18px 22px; text-align: center; flex: none; }
+    .infl-person { border: 2px solid var(--ay-primary); background: #f7fcff; color: var(--ay-primary); font-weight: 800; font-size: 17px; min-width: 156px; }
+    .infl-person small { display: block; font-weight: 600; font-size: 11px; color: var(--ay-gray); margin-top: 4px; }
+    .infl-camps { border: 1.5px dashed var(--ay-primary); border-radius: 14px; background: #f7fcff; padding: 18px 16px 14px; position: relative; flex: none; }
+    .infl-camps-label { position: absolute; top: -9px; left: 14px; background: #fff; padding: 0 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ay-primary); font-weight: 800; }
+    .infl-camp { background: #eef7fd; border: 1px solid #cfe4f5; border-radius: 8px; padding: 9px 18px; font-weight: 700; color: var(--ay-dark); font-size: 13.5px; text-align: center; }
+    .infl-camp + .infl-camp { margin-top: 8px; }
+    .infl-opp { background: var(--ay-primary); color: #fff; font-weight: 800; font-size: 17px; min-width: 156px; }
+    .infl-opp small { display: block; font-weight: 600; font-size: 11px; color: rgba(255,255,255,.88); margin-top: 4px; }
+    .infl-conn { display: flex; flex-direction: column; align-items: center; padding: 0 16px; flex: none; }
+    .infl-conn .cl { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ay-gray); font-weight: 700; margin-bottom: 5px; white-space: nowrap; }
+    .infl-conn .ca { font-size: 24px; color: var(--ay-light); font-weight: 700; }
+    /* influence variant: opportunity containing the campaigns as its influence */
+    .infl-oppbox { background: var(--ay-primary); border-radius: 14px; padding: 18px 16px 14px; position: relative; flex: none; }
+    .infl-oppbox-label { position: absolute; top: -9px; left: 14px; background: #fff; padding: 0 8px; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--ay-primary); font-weight: 800; }
+    .infl-oppcap { background: rgba(255,255,255,.18); color: #fff; border-radius: 7px; padding: 7px 16px; font-weight: 700; font-size: 13px; text-align: center; }
+    .infl-oppcap + .infl-oppcap { margin-top: 7px; }
+    .infl-opptag { color: #fff; font-size: 11.5px; font-weight: 700; text-align: center; margin-top: 10px; opacity: .9; }
+    /* influence: coverage accumulates across the lifecycle - slide-7 white-card idiom */
+    .lc { display: flex; align-items: center; justify-content: center; margin: 0 auto; max-width: 1120px; }
+    .lc-card { background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); border-radius: 14px; box-shadow: 0 3px 12px rgba(0,0,0,.06); padding: 16px 18px; text-align: left; width: 214px; flex: none; }
+    .lc-card.wide { width: 252px; }
+    .lc-card .lch-t { font-size: 17px; font-weight: 800; color: var(--ay-dark); }
+    .lc-card .lch-s { font-size: 11px; color: var(--ay-gray); margin: 2px 0 12px; }
+    .lc-arrow { display: flex; flex-direction: column; align-items: center; padding: 0 14px; flex: none; }
+    .lc-arrow .al { font-size: 10.5px; color: var(--ay-gray); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 4px; text-align: center; white-space: nowrap; }
+    .lc-arrow .aa { font-size: 22px; color: var(--ay-light); font-weight: 700; }
+
+    /* ===== SLIDE: pyramid ===== */
+    .pyramid { display: flex; flex-direction: column; align-items: center; gap: 9px; margin: 6px auto 0; width: 100%; max-width: 760px; }
+    .tier { border-radius: 12px; padding: 16px 24px; text-align: center; box-shadow: 0 3px 12px rgba(0,0,0,.07); }
+    .tier .tlvl { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; font-weight: 800; }
+    .tier .tcontent { font-size: 13px; font-weight: 600; line-height: 1.5; margin-top: 5px; }
+    .tier.okr { width: 50%; background: linear-gradient(135deg,#11a9e6,#0ab38c); color: #fff; }
+    .tier.okr .tlvl { opacity: .85; }
+    .tier.okr .tcontent { font-size: 14px; font-weight: 800; }
+    /* POC closing slide */
+    .poc { text-align: center; max-width: 880px; margin: 0 auto; }
+    .poc p { font-size: 18px; color: var(--ay-gray); line-height: 1.6; margin: 0 auto 34px; max-width: 760px; }
+    .poc-cta { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg,#11a9e6,#0ab38c); color: #fff; font-size: 16px; font-weight: 700; text-decoration: none; padding: 14px 30px; border-radius: 30px; box-shadow: 0 6px 18px rgba(17,169,230,.3); }
+    .tier.kpi { width: 76%; background: #eaf6fc; color: var(--ay-dark); border: 1px solid #cfe9f7; }
+    .tier.kpi .tlvl { color: var(--ay-primary); }
+    .tier.met { width: 100%; background: #f6f8fa; color: var(--ay-text); border: 1px solid #e5e7eb; }
+    .tier.met .tlvl { color: var(--ay-gray); }
+    .tier b { font-weight: 800; }
+    .tchips { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; margin-top: 9px; }
+    .tchip { background: #fff; border: 1px solid rgba(0,0,0,.07); border-radius: 7px; padding: 5px 11px; font-size: 12.5px; font-weight: 600; color: var(--ay-dark); }
+    .tier.kpi .tchip { border-color: #cfe9f7; }
+    .park { font-size: 13px; color: var(--ay-gray); margin-top: 22px; max-width: 760px; margin-left:auto; margin-right:auto; line-height: 1.55; font-style: italic; }
+    .park b { color: var(--ay-dark); font-style: normal; }
+
+    /* ===== SLIDE: blind spots (fan into direct) ===== */
+    .bias-wrap { display: flex; align-items: center; justify-content: center; gap: 28px; max-width: 1080px; margin: 6px auto 0; }
+    .bias-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; flex: 1; max-width: 660px; }
+    .bias { background: #fff; border: 1px solid #e5e7eb; border-left: 4px solid #94a3b8; border-radius: 12px; padding: 14px 18px; text-align: left; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+    .bias .bt { font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 800; color: var(--ay-gray); margin-bottom: 5px; }
+    .bias .bb { font-size: 13.5px; color: var(--ay-text); line-height: 1.45; }
+    .bias-conn { display: flex; flex-direction: column; align-items: center; flex: none; }
+    .bias-conn .cl { font-size: 10.5px; text-transform: uppercase; letter-spacing: 1px; color: var(--ay-gray); font-weight: 700; margin-bottom: 5px; white-space: nowrap; }
+    .bias-conn .ca { font-size: 26px; color: var(--ay-light); font-weight: 700; }
+    .bias-sink { background: var(--ay-dark); color: #fff; border-radius: 14px; padding: 28px 30px; text-align: center; flex: none; min-width: 212px; }
+    .bias-sink .st { font-size: 23px; font-weight: 800; letter-spacing: .3px; }
+    .bias-sink .ss { font-size: 12px; font-weight: 600; opacity: .85; margin-top: 7px; }
+
+    /* ===== SLIDE: direct signal (two ledger columns) ===== */
+    .direct-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; max-width: 1000px; margin: 4px auto 0; }
+    .dcol { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 20px 26px; text-align: left; box-shadow: 0 4px 16px rgba(0,0,0,.06); }
+    .dcol.got { border-top: 5px solid var(--ay-primary); }
+    .dcol.rest { border-top: 5px solid var(--ay-dark); }
+    .dh { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 8px; }
+    .dcol.got .dh { color: var(--ay-primary); }
+    .dcol.rest .dh { color: var(--ay-dark); }
+    .di { padding: 10px 0; border-bottom: 1px solid #f1f5f9; }
+    .di:last-child { border-bottom: none; padding-bottom: 4px; }
+    .di b { display: block; font-size: 14.5px; color: var(--ay-dark); margin-bottom: 2px; }
+    .di span { font-size: 12.5px; color: var(--ay-gray); line-height: 1.45; }
+
+    /* ===== SLIDE: CRM hygiene (giant stat) ===== */
+    .big-stat { font-size: 150px; font-weight: 800; line-height: .9; letter-spacing: -4px; background: linear-gradient(135deg,#11a9e6,#0ab38c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin: 4px 0 6px; }
+    .big-sub { font-size: 18px; font-weight: 600; color: var(--ay-dark); max-width: 820px; margin: 0 auto; line-height: 1.5; }
+    .big-sub b { color: var(--ay-primary); }
+
+    /* ===== SLIDE: horizon (checklist) ===== */
+    .horizon { list-style: none; margin: 6px auto 0; max-width: 840px; text-align: left; }
+    .horizon li { display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--ay-bg-subtle); font-size: 17px; color: var(--ay-text); line-height: 1.45; }
+    .horizon li:last-child { border-bottom: none; }
+    .horizon li b { color: var(--ay-dark); }
+    .horizon .hz-icon { width: 30px; height: 30px; border-radius: 50%; background: linear-gradient(135deg,#11a9e6,#0ab38c); color: #fff; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .horizon .hz-icon svg { width: 16px; height: 16px; }
+
+    /* ===== SLIDE: ROI vs North Star (re-reading the measurement chain) ===== */
+    .rbox.faded { opacity: .38; }
+    .rarrow.faded { opacity: .38; }
+    .rbox.roi { background: var(--ay-success); border-color: var(--ay-success); }
+    .rbox.roi .rt { color: #fff; }
+    .rbox.roi .rs { color: rgba(255,255,255,.92); }
+    .relay-zones .zmkt.ns .zlabel { text-align: center; color: var(--ay-dark); }
+    .relay-zones .zsales.roi .zline { background: repeating-linear-gradient(90deg,#0ab38c 0 6px,transparent 6px 12px); height: 3px; }
+    .relay-zones .zsales.roi .zlabel { color: #076b54; text-align: center; }
+    .relay-zones .zsub { display: block; font-size: 11px; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--ay-gray); margin-top: 4px; line-height: 1.35; }
+    .relay-zones .zmkt.ns .zsub, .relay-zones .zsales.roi .zsub { text-align: center; }
+    .relay-zones .zmkt.ns .zcap { display: block; width: 25%; margin-left: auto; text-align: center; }
+    .relay-zones .zmkt.ns .zcap .zlabel { white-space: nowrap; }
+    /* Lead-sources native diagram (on-brand palette + Lucide line icons) */
+    .lead-src { display: grid; grid-template-columns: 1fr 168px; grid-template-rows: auto 1fr auto; gap: 8px 10px; width: 100%; max-width: 1140px; margin: 16px auto 0; color: #fff; text-align: left; }
+    .lead-src .ls-bar { grid-column: 1; grid-row: 1; background: #11a9e6; border-radius: 9px; text-align: center; font-size: 19px; font-weight: 600; padding: 11px; }
+    .lead-src .ls-out-hdr { grid-column: 2; grid-row: 1; background: #0ab38c; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 600; }
+    .lead-src .ls-cols { grid-column: 1; grid-row: 2; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+    .lead-src .ls-col { border-radius: 9px; padding: 13px 12px 15px; }
+    .lead-src .c-mkt { background: #00AEEF; }
+    .lead-src .c-par { background: #004A76; }
+    .lead-src .c-sdr { background: #7B5EC6; }
+    .lead-src .c-sal { background: #E8743B; }
+    .lead-src .ls-h { display: flex; align-items: center; gap: 7px; font-size: 20px; font-weight: 600; margin-bottom: 11px; line-height: 1; }
+    .lead-src .ls-h i { width: 19px; height: 19px; flex: 0 0 auto; stroke-width: 2.25; }
+    .lead-src .ls-col ul { list-style: none; margin: 0; padding: 0; }
+    .lead-src .ls-col li { position: relative; padding-left: 14px; font-size: 13.5px; line-height: 1.32; margin-bottom: 3px; }
+    .lead-src .ls-col li::before { content: "\2022"; position: absolute; left: 2px; top: 0; opacity: .75; }
+    .lead-src .ls-top { min-height: 88px; margin-bottom: 11px; }
+    .lead-src .ls-out-box { grid-column: 2; background: #0ab38c; border-radius: 9px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 11px; line-height: 1.42; }
+    .lead-src .ls-out-box.big { grid-row: 2; font-size: 13.5px; }
+    .lead-src .ls-out-box.small { grid-row: 3; font-size: 14px; }
+    .lead-src .ls-indirect { grid-column: 1; grid-row: 3; background: #64748b; display: flex; align-items: center; gap: 11px; padding: 12px 48px 12px 16px; clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 50%, calc(100% - 28px) 100%, 0 100%); }
+    .lead-src .ls-indirect i { width: 24px; height: 24px; flex: 0 0 auto; stroke-width: 2; }
+    .lead-src .ls-itxt { display: flex; flex-direction: column; }
+    .lead-src .ls-itxt b { font-size: 18px; font-weight: 600; line-height: 1.15; }
+    .lead-src .ls-itxt span { font-size: 13px; line-height: 1.24; opacity: .95; }
+    .lead-src .ls-glabel { font-size: 9.5px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; opacity: .6; margin: 0 0 4px; }
+    .lead-src .ls-out-box.big { flex-direction: column; gap: 9px; }
+    .lead-src .ob-label { font-size: 14.5px; font-weight: 700; line-height: 1.28; }
+    .lead-src .ob-label span { font-weight: 500; opacity: .85; }
+    .lead-src .ob-metrics { width: 100%; padding-top: 9px; border-top: 1px solid rgba(255,255,255,.4); font-size: 11.5px; font-weight: 600; line-height: 1.45; }
+
+    /* ===== Motion layer (pm-*). Every animation is scoped to .slide.active, so it replays on each
+       visit; base styles are the END state, so reduced motion simply shows the finished slide.
+       Per-element delay comes from --d. ===== */
+    @keyframes pmk-in { from { opacity: 0; transform: translateY(12px); } }
+    @keyframes pmk-fade { from { opacity: 0; } }
+    @keyframes pmk-pop { 0% { opacity: 0; transform: scale(.6); } 70% { opacity: 1; transform: scale(1.08); } 100% { opacity: 1; transform: none; } }
+    @keyframes pmk-grow { from { transform: scaleX(0); } }
+    @keyframes pmk-type { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+    @keyframes pmk-flash { 0%, 100% { color: var(--ay-light); transform: none; } 45% { color: var(--ay-primary); transform: scale(1.3); } }
+    @keyframes pmk-glow { 0% { box-shadow: 0 0 0 0 rgba(17,169,230,.55); } 100% { box-shadow: 0 0 0 18px rgba(17,169,230,0); } }
+    @keyframes pmk-press { 0%, 100% { transform: none; } 50% { transform: scale(.93); filter: brightness(.9); } }
+    @keyframes pmk-wire { 0% { left: 0; opacity: 0; } 15%, 85% { opacity: 1; } 100% { left: calc(100% - 10px); opacity: 0; } }
+    @keyframes pmk-scan { 0% { top: 0; opacity: 0; } 10%, 90% { opacity: 1; } 100% { top: calc(100% - 2px); opacity: 0; } }
+    @keyframes pmk-raw { 0% { opacity: 0; text-decoration-color: transparent; } 8%, 80% { opacity: 1; text-decoration-color: transparent; } 90% { opacity: 1; text-decoration-color: var(--ay-danger); } 100% { opacity: 0; text-decoration-color: var(--ay-danger); } }
+    @keyframes pmk-row { from { opacity: 0; transform: translateX(-10px); background: #d9f2fc; } to { opacity: 1; transform: none; background: transparent; } }
+    @keyframes pmk-rowf { from { opacity: 0; background: #d9f2fc; } to { opacity: 1; background: transparent; } }
+    @keyframes pmk-light { from { opacity: .3; } }
+    @keyframes pmk-dim { from { opacity: 1; } }
+    @keyframes pmk-ring { from { box-shadow: 0 0 0 0 rgba(17,169,230,0); } to { box-shadow: 0 0 0 2.5px var(--ay-primary); border-color: var(--ay-primary); } }
+    @keyframes pmk-toast { 0% { opacity: 0; transform: translate(-50%, 8px) scale(.9); } 15%, 70% { opacity: 1; transform: translate(-50%, 0) scale(1); } 100% { opacity: 0; transform: translate(-50%, 44px) scale(.4); } }
+    @keyframes pmk-toast-l { 0% { opacity: 0; transform: translate(-8px, -50%) scale(.9); } 15%, 70% { opacity: 1; transform: translate(0, -50%) scale(1); } 100% { opacity: 0; transform: translate(60px, -50%) scale(.4); } }
+    @keyframes pmk-quote-mark { from { color: var(--ay-dark); background-size: 0% 100%; } }
+
+    .slide.active .pmk-in { animation: pmk-in .55s ease-out var(--d, 0s) both; }
+    .slide.active .pmk-fade { animation: pmk-fade .45s ease var(--d, 0s) both; }
+    .slide.active .pmk-pop { animation: pmk-pop .45s ease-out var(--d, 0s) both; }
+    .slide.active .pmk-type { animation: pmk-type var(--t, .9s) steps(var(--n, 24)) var(--d, 0s) both; }
+    .slide.active .pmk-press { animation: pmk-press .35s ease var(--d, 0s) both; }
+    .slide.active .pmk-flash { display: inline-block; animation: pmk-flash .7s ease var(--d, 0s) both; }
+    .slide.active .pmk-lit { animation: pmk-light .5s ease var(--d, 0s) both, pmk-glow 1s ease-out calc(var(--d, 0s) + .2s) both; }
+    .slide.active .pmk-row { animation: pmk-row .45s ease-out var(--d, 0s) both; }
+    .slide.active tr.pmk-row { animation-name: pmk-rowf; }
+
+    /* quotes (slides 2 and 4): the lead priority deck's highlighter, phrase by phrase */
+    .mission-quote b, .qquote b { background: linear-gradient(transparent 64%, rgba(17,169,230,.16) 0) no-repeat left / 100% 100%; }
+    .slide.active .mission-quote, .slide.active .qquote { animation: pmk-in .6s ease-out .1s both; }
+    .slide.active .mission-quote b, .slide.active .qquote b { animation: pmk-quote-mark .6s ease both; }
+    .slide.active .mission-quote b:nth-of-type(1), .slide.active .qquote b:nth-of-type(1) { animation-delay: .8s; }
+    .slide.active .mission-quote b:nth-of-type(2), .slide.active .qquote b:nth-of-type(2) { animation-delay: 1.4s; }
+    .slide.active .mission-quote b:nth-of-type(3), .slide.active .qquote b:nth-of-type(3) { animation-delay: 2s; }
+
+    /* slide 3: the three counts */
+    .slide.active .counts .count { animation: pmk-in .6s ease-out both; }
+    .slide.active .counts .count:nth-child(1) { animation-delay: .2s; }
+    .slide.active .counts .count:nth-child(2) { animation-delay: .5s; }
+    .slide.active .counts .count:nth-child(3) { animation-delay: .8s; }
+
+    /* slide 6: the relay builds block by block, then the two perimeters draw */
+    .slide.active[data-pm="relay1"] .relay-row > * { animation: pmk-in .5s ease-out both; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(1) { animation-delay: .2s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(2) { animation-delay: .45s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(3) { animation-delay: .6s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(4) { animation-delay: .85s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(5) { animation-delay: 1s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(6) { animation-delay: 1.25s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(7) { animation-delay: 1.4s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(8) { animation-delay: 1.65s; }
+    .slide.active[data-pm="relay1"] .relay-row > :nth-child(9) { animation-delay: 1.8s; }
+    .slide.active[data-pm="relay1"] .zline { transform-origin: left center; animation: pmk-grow .8s ease-out 2.2s both; }
+    .slide.active[data-pm="relay1"] .zsales .zline { animation-delay: 2.8s; }
+    .slide.active[data-pm="relay1"] .zmkt .zlabel { animation: pmk-fade .5s ease 2.7s both; }
+    .slide.active[data-pm="relay1"] .zsales .zlabel { animation: pmk-fade .5s ease 3.2s both; }
+    .slide.active[data-pm="relay1"] .relay-foot { animation: pmk-in .6s ease-out 3.6s both; }
+
+    /* slide 7: same row, the early stages dim, Opportunity and P4 take their colours, then the two lenses */
+    @keyframes pmk-own { from { background: #f1f4f7; border-color: #e5e7eb; } }
+    @keyframes pmk-own-t { from { color: var(--ay-dark); } }
+    @keyframes pmk-own-s { from { color: var(--ay-gray); } }
+    @keyframes pmk-roi { from { background: #fff; border-color: #cbd5e1; } }
+    @keyframes pmk-roi-t { from { color: var(--ay-light); } }
+    .slide.active[data-pm="relay2"] .faded { animation: pmk-dim .6s ease .3s both; }
+    .slide.active[data-pm="relay2"] .rbox.own { animation: pmk-own .6s ease .9s both; }
+    .slide.active[data-pm="relay2"] .rbox.own .rt { animation: pmk-own-t .6s ease .9s both; }
+    .slide.active[data-pm="relay2"] .rbox.own .rs { animation: pmk-own-s .6s ease .9s both; }
+    .slide.active[data-pm="relay2"] .rbox.roi { animation: pmk-roi .6s ease 1.5s both; }
+    .slide.active[data-pm="relay2"] .rbox.roi .rt, .slide.active[data-pm="relay2"] .rbox.roi .rs { animation: pmk-roi-t .6s ease 1.5s both; }
+    .slide.active[data-pm="relay2"] .zcap { animation: pmk-in .5s ease-out 1.2s both; }
+    .slide.active[data-pm="relay2"] .zsales .zlabel, .slide.active[data-pm="relay2"] .zsales .zsub { animation: pmk-in .5s ease-out 1.8s both; }
+
+    /* shared mockup parts: a wire with a travelling packet, ticks, pills */
+    .pmk-wire { position: relative; width: 42px; height: 12px; flex: none; align-self: center; }
+    .pmk-wire::before { content: ""; position: absolute; left: 0; right: 6px; top: 5px; height: 2px; background: #cbd5e1; }
+    .pmk-wire::after { content: ""; position: absolute; right: 0; top: 1px; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 7px solid #cbd5e1; }
+    .pmk-wire i { position: absolute; top: 1px; left: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--ay-primary); box-shadow: 0 0 0 4px rgba(17,169,230,.2); opacity: 0; }
+    .slide.active .pmk-wire i { animation: pmk-wire .7s ease-in-out var(--d, 0s) both; }
+    .pmk-ok { font-size: 9.5px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: #076b54; background: #e6f8f2; border-radius: 10px; padding: 2px 8px; white-space: nowrap; }
+
+    /* slide 9a: the landing URL, the capture card that scans and normalises, the form */
+    .cap-stage { width: 100%; max-width: 1000px; margin: 92px auto 0; display: flex; flex-direction: column; gap: 18px; }
+    .pmk-who { font-size: 11px; font-weight: 800; letter-spacing: 1.3px; text-transform: uppercase; color: var(--ay-primary); text-align: left; margin-bottom: 7px; }
+    .pmk-url { display: flex; align-items: center; gap: 12px; height: 40px; background: #f1f4f7; border: 1px solid #e5e7eb; border-radius: 10px; padding: 0 14px; }
+    .pmk-url-dots { display: flex; gap: 5px; flex: none; }
+    .pmk-url-dots i { width: 9px; height: 9px; border-radius: 50%; background: #cbd5e1; }
+    .pmk-url-bar { flex: 1; min-width: 0; height: 26px; background: #fff; border-radius: 13px; display: flex; align-items: center; gap: 7px; padding: 0 12px; font-size: 12.5px; color: var(--ay-gray); overflow: hidden; white-space: nowrap; text-align: left; }
+    .pmk-url-bar svg { width: 12px; height: 12px; flex: none; color: var(--ay-success); }
+    .pmk-url-txt { display: inline-block; }
+    .pmk-url-txt em { font-style: normal; font-weight: 800; color: var(--ay-dark); }
+    .cap-flow { display: flex; align-items: stretch; justify-content: center; gap: 8px; }
+    .pmk-cap { width: 300px; flex: none; position: relative; overflow: hidden; }
+    .pmk-grp { display: flex; justify-content: space-between; align-items: center; }
+    .pmk-kv { display: flex; align-items: center; gap: 8px; height: 24px; margin-bottom: 4px; }
+    .pmk-kv .k { width: 84px; flex: none; font-size: 11px; font-weight: 700; color: var(--ay-gray); text-align: left; }
+    .pmk-kv .v { position: relative; flex: 1; min-width: 0; height: 22px; background: #eff6ff; border-radius: 6px; }
+    .pmk-kv .v > * { position: absolute; left: 8px; right: 8px; top: 0; line-height: 22px; font-size: 12px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: left; }
+    .pmk-kv .pmk-raw { color: var(--ay-text); text-decoration: line-through; text-decoration-color: transparent; text-decoration-thickness: 2px; opacity: 0; }
+    .slide.active .pmk-kv .pmk-raw { animation: pmk-raw var(--dur, 2.5s) linear var(--d, 0s) both; }
+    .pmk-kv .pmk-norm { color: var(--ay-primary); transform-origin: left center; }
+    .pmk-kv .pmk-val { color: var(--ay-dark); }
+    .pmk-also { font-size: 10.5px; color: var(--ay-light); text-align: left; }
+    .pmk-scan { position: absolute; left: 0; right: 0; top: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--ay-primary), transparent); box-shadow: 0 0 12px 3px rgba(17,169,230,.35); opacity: 0; pointer-events: none; }
+    .slide.active .pmk-scan { animation: pmk-scan 1.2s ease-in-out var(--d, 0s) both; }
+    .pmk-proc { padding-top: 22px; justify-content: center; }
+    .pmk-proc .eb { position: relative; padding-right: 30px; }
+    .pmk-tick { position: absolute; right: 8px; top: 50%; margin-top: -8px; width: 16px; height: 16px; border-radius: 50%; background: var(--ay-success); color: #fff; font-size: 10px; font-weight: 800; font-style: normal; line-height: 16px; text-align: center; }
+    .pmk-form { width: 290px; flex: none; background: #fff; border: 1px solid #e5e7eb; border-top: 4px solid var(--ay-primary); border-radius: 14px; box-shadow: 0 3px 12px rgba(0,0,0,.06); padding: 14px 16px; text-align: left; display: flex; flex-direction: column; gap: 7px; box-sizing: border-box; }
+    .pmk-form-h { font-size: 13.5px; font-weight: 800; color: var(--ay-dark); }
+    .pmk-field { display: flex; flex-direction: column; gap: 2px; }
+    .pmk-fl { font-size: 10px; font-weight: 700; color: var(--ay-gray); }
+    .pmk-fi { display: block; height: 24px; border: 1px solid #d6dde5; border-radius: 6px; padding: 0 8px; font-size: 12px; line-height: 22px; color: var(--ay-text); white-space: nowrap; overflow: hidden; box-sizing: border-box; }
+    .pmk-fi > span { display: inline-block; }
+    .pmk-hidden { position: relative; border: 1.5px dashed #b7d9ef; border-radius: 9px; background: #f7fcff; padding: 13px 10px 7px; margin-top: 6px; }
+    .pmk-hidden-l { position: absolute; top: -8px; left: 10px; background: #fff; padding: 0 6px; font-size: 9.5px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: var(--ay-primary); }
+    .pmk-hv { display: flex; justify-content: space-between; align-items: center; gap: 8px; height: 19px; font-size: 10.5px; }
+    .pmk-hv span { color: var(--ay-gray); font-weight: 600; white-space: nowrap; }
+    .pmk-hv b { color: var(--ay-primary); font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 128px; }
+    .pmk-btn { position: relative; height: 30px; margin-top: 4px; border-radius: 16px; background: linear-gradient(135deg,#11a9e6,#0ab38c); color: #fff; font-size: 12.5px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+    .pmk-sent { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 16px; background: var(--ay-success); color: #fff; }
+
+    /* slide 9b: form, Pardot prospect, then Lead, Contact, Opportunity */
+    .crm-flow { display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%; margin-top: 60px; }
+    .pmk-form.sm { width: 214px; padding: 12px 13px; gap: 6px; }
+    .pmk-form.sm .pmk-hv b { max-width: 92px; }
+    .pmk-pardot { width: 232px; flex: none; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,.06); overflow: hidden; text-align: left; }
+    .pmk-pd-h { background: var(--ay-dark); color: #fff; padding: 10px 14px; }
+    .pmk-pd-h small { display: block; font-size: 9.5px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; opacity: .75; }
+    .pmk-pd-h b { font-size: 14px; font-weight: 800; }
+    .pmk-pd-b { padding: 8px 14px 12px; display: flex; flex-direction: column; }
+    .pmk-pd-r { display: flex; justify-content: space-between; align-items: center; gap: 8px; height: 25px; border-bottom: 1px solid #f1f5f9; font-size: 11px; }
+    .pmk-pd-r span { color: var(--ay-gray); font-weight: 600; white-space: nowrap; }
+    .pmk-pd-r b { color: var(--ay-dark); font-weight: 700; max-width: 118px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .pmk-pd-pill { align-self: flex-start; margin-top: 9px; font-size: 10px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: #076b54; background: #e6f8f2; border-radius: 10px; padding: 3px 9px; }
+    .crm-flow .sx-person { width: 112px; padding: 9px 8px; }
+    .pmk-stamp { display: block; margin-top: 7px; font-size: 10px; font-weight: 800; color: #fff; background: var(--ay-primary); border-radius: 10px; padding: 3px 8px; white-space: nowrap; }
+
+    /* slide 5: the lead sources build column by column, then the results and the indirect contribution */
+    @keyframes pmk-slide-x { from { opacity: 0; transform: translateX(-60px); } }
+    .slide.active[data-pm="lsrc"] .ls-bar { transform-origin: left center; animation: pmk-grow .7s ease-out .1s both; }
+    .slide.active[data-pm="lsrc"] .ls-col { animation: pmk-in .55s ease-out var(--cd, 0s) both; }
+    .slide.active[data-pm="lsrc"] .ls-h i, .slide.active[data-pm="lsrc"] .ls-h svg { animation: pmk-pop .45s ease-out calc(var(--cd, 0s) + .2s) both; }
+    .slide.active[data-pm="lsrc"] .ls-glabel { animation: pmk-fade .4s ease calc(var(--cd, 0s) + .25s) both; }
+    .slide.active[data-pm="lsrc"] .ls-col li { animation: pmk-in .4s ease-out calc(var(--cd, 0s) + .3s + var(--j, 0) * .07s) both; }
+    .ls-col li:nth-child(2) { --j: 1; } .ls-col li:nth-child(3) { --j: 2; } .ls-col li:nth-child(4) { --j: 3; } .ls-col li:nth-child(5) { --j: 4; }
+    .ls-col .ls-bot li { --j: 3; } .ls-col .ls-bot li:nth-child(2) { --j: 4; } .ls-col .ls-bot li:nth-child(3) { --j: 5; } .ls-col .ls-bot li:nth-child(4) { --j: 6; } .ls-col .ls-bot li:nth-child(5) { --j: 7; }
+    .slide.active[data-pm="lsrc"] .ls-out-hdr { animation: pmk-in .5s ease-out 2.2s both; }
+    .slide.active[data-pm="lsrc"] .ls-out-box.big { animation: pmk-in .55s ease-out 2.4s both, pmk-glow 1s ease-out 3s both; }
+    .slide.active[data-pm="lsrc"] .ob-metrics { animation: pmk-fade .5s ease 2.9s both; }
+    .slide.active[data-pm="lsrc"] .ls-indirect { animation: pmk-slide-x .7s ease-out 3.4s both; }
+    .slide.active[data-pm="lsrc"] .ls-out-box.small { animation: pmk-in .5s ease-out 4s both, pmk-glow 1s ease-out 4.4s both; }
+    /* slide 9b: Lead, Contact and Opportunity as Salesforce record cards */
+    .crm-col { display: flex; flex-direction: column; align-items: stretch; gap: 3px; width: 286px; flex: none; }
+    .sfm { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 3px 12px rgba(0,0,0,.06); overflow: hidden; text-align: left; }
+    .sfm-h { display: flex; align-items: center; gap: 9px; padding: 7px 12px; background: #f8fafc; border-bottom: 1px solid #eef2f6; }
+    .sfm-h .sfc-ic { width: 26px; height: 26px; }
+    .sfm-n { font-size: 13.5px; font-weight: 800; color: var(--ay-dark); line-height: 1.15; }
+    .sfm-b { padding: 2px 12px 4px; }
+    .sfm-r { display: flex; justify-content: space-between; align-items: center; gap: 8px; height: 23px; font-size: 11px; border-bottom: 1px solid #f1f5f9; }
+    .sfm-r:last-child { border-bottom: 0; }
+    .sfm-r span { color: var(--ay-gray); font-weight: 600; white-space: nowrap; }
+    .sfm-r b { color: var(--ay-dark); font-weight: 700; white-space: nowrap; display: inline-flex; align-items: center; }
+    .sfm-r .pmk-stamp { display: inline-block; margin: 0; }
+    .sfm-down { display: block; text-align: center; font-size: 15px; font-weight: 700; color: var(--ay-light); line-height: 15px; height: 15px; }
+    .sfc-ic.opp { background: #fcb95b; }
+    /* slide 12: the sales outreach video call that lands as a sales campaign */
+    .pmk-mini.pmk-mvideo { width: 184px; padding: 0; overflow: hidden; background: #0f172a; border-color: #0f172a; gap: 0; }
+    .pmk-mv-top { display: flex; justify-content: space-between; align-items: center; height: 20px; padding: 0 8px; font-size: 8.5px; font-weight: 700; color: #cbd5e1; }
+    .pmk-mv-top b { display: inline-flex; align-items: center; gap: 4px; color: #fff; font-weight: 800; }
+    .pmk-mv-top b::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #ef4444; }
+    .pmk-mv-main { position: relative; flex: 1; margin: 0 6px; border-radius: 6px; background: linear-gradient(160deg,#1e3a5f,#0f2a44); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; }
+    .pmk-mv-main .pmk-mav { width: 36px; height: 36px; margin: 0; background: #cbd5e1; color: #475569; }
+    .pmk-mv-main small { font-size: 8.5px; font-weight: 700; color: #fff; }
+    .pmk-mv-self { position: absolute; right: 5px; top: 5px; width: 46px; height: 30px; border-radius: 4px; background: #334155; border: 1px solid #475569; display: flex; align-items: flex-end; justify-content: center; font-size: 6px; font-weight: 700; color: #e2e8f0; padding-bottom: 2px; box-sizing: border-box; white-space: nowrap; }
+    .pmk-mv-bar { display: flex; justify-content: center; gap: 8px; height: 26px; align-items: center; }
+    .pmk-mv-bar i { width: 18px; height: 18px; border-radius: 50%; background: #334155; color: #fff; display: flex; align-items: center; justify-content: center; }
+    .pmk-mv-bar i.end { background: #ef4444; }
+    .pmk-mv-bar svg { width: 10px; height: 10px; }
+    @keyframes pmk-speak { 0%, 100% { box-shadow: 0 0 0 0 rgba(10,179,140,0); } 50% { box-shadow: 0 0 0 4px rgba(10,179,140,.7); } }
+    .slide.active .pmk-mvideo .pmk-mav { animation: pmk-speak .6s ease calc(var(--d, 0s) + .3s) 2 both; }
+    .chip2.sal { background: #fdeadf; color: #b4521f; }
+    /* slide 15: last-touch credit against Campaign Influence, side by side */
+    .cmp { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; width: 100%; max-width: 1080px; margin: 0 auto; text-align: left; }
+    .cmp-p { display: flex; flex-direction: column; gap: 10px; }
+    .cmp-tag { align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; border-radius: 12px; padding: 4px 12px; }
+    .cmp-tag.old { background: #fdecec; color: #b91c1c; }
+    .cmp-tag.new { background: #e6f8f2; color: #076b54; }
+    .cmp-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 3px 12px rgba(0,0,0,.06); overflow: hidden; }
+    .cmp-f { display: flex; justify-content: space-between; align-items: center; padding: 8px 14px; font-size: 11.5px; border-bottom: 1px solid #eef2f6; }
+    .cmp-f span { color: var(--ay-gray); font-weight: 600; }
+    .cmp-f b { color: var(--ay-dark); font-weight: 800; display: inline-flex; align-items: center; }
+    .cmp-list { padding: 4px 14px 10px; }
+    .cmp-lh { font-size: 11.5px; font-weight: 800; color: var(--ay-dark); padding: 6px 0 4px; }
+    .cmp-r { display: grid; grid-template-columns: minmax(0, 1fr) 84px 124px; align-items: center; gap: 8px; height: 27px; border-top: 1px solid #f1f5f9; font-size: 12px; border-radius: 4px; }
+    .cmp-r > span { color: #0b5cab; font-weight: 700; white-space: nowrap; display: inline-flex; align-items: center; }
+    .cmp-r > .pmk-team { justify-self: center; }
+    .cmp-r em { justify-self: end; font-style: normal; font-size: 11.5px; font-weight: 700; color: var(--ay-gray); white-space: nowrap; }
+    .cmp-r.off { opacity: .35; }
+    .cmp-r.off > * { text-decoration: line-through; }
+    .cmp-p:last-child .cmp-r em { color: #076b54; font-weight: 800; }
+    .cmp-r.win { background: #fff7ed; padding: 0 6px; margin: 0 -6px; }
+    .cmp-r.win em { color: #b45309; font-weight: 800; }
+    @keyframes pmk-off { from { opacity: 1; } to { opacity: .35; } }
+    @keyframes pmk-strike { from { text-decoration-color: transparent; } to { text-decoration-color: currentColor; } }
+    .slide.active[data-pm="cmp"] .cmp-r.off { animation: pmk-row .45s ease-out var(--d, 0s) both, pmk-off .6s ease 2.5s forwards; }
+    .slide.active[data-pm="cmp"] .cmp-r.off > * { animation: pmk-strike .6s ease 2.5s both; }
+    @keyframes pmk-win { from { background: transparent; } to { background: #fff7ed; } }
+    .slide.active[data-pm="cmp"] .cmp-r.win { animation: pmk-row .45s ease-out var(--d, 0s) both, pmk-win .6s ease 2.7s forwards; }
+    .cmp-bar { display: flex; height: 14px; border-radius: 7px; overflow: hidden; margin: 2px 14px 4px; transform-origin: left center; }
+    .cmp-bar i { display: block; height: 100%; }
+    .cmp-leg { display: flex; gap: 14px; padding: 0 14px 12px; font-size: 11px; font-weight: 700; color: var(--ay-gray); }
+    .cmp-leg span { display: inline-flex; align-items: center; gap: 5px; }
+    .cmp-leg i { width: 9px; height: 9px; border-radius: 50%; }
+    .slide.active[data-pm="cmp"] .cmp-bar { animation: pmk-grow .8s ease-out 5.3s both; }
+    .cmp-cap { font-size: 13.5px; color: var(--ay-text); line-height: 1.5; padding: 0 2px; }
+    .slide.active[data-pm="cmp"] .cmp-cap.c1 { animation: pmk-in .5s ease-out 3s both; }
+    .slide.active[data-pm="cmp"] .cmp-cap.c2 { animation: pmk-in .5s ease-out 5.8s both; }
+    /* slide 16: the contact collects campaigns, opportunity #1 freezes them, a late one is refused and feeds opportunity #2 */
+    .ltv-lc { align-items: flex-start; margin-top: 18px; }
+    .ltv-lc .lc-card { width: 214px; margin-top: 40px; }
+    .ltv-lc .lc-arrow { padding: 0 8px; }
+    .ltv-lc .sfo { width: 288px; }
+    .ltv-lc .sfo.sm { width: 212px; }
+    .ltv-lc .lc-arrow { margin-top: 92px; }
+    .ltv-lc .sfo-h { position: relative; }
+    .ltv-lh { display: flex; justify-content: space-between; align-items: center; gap: 8px; white-space: nowrap; }
+    .ltv-flock { display: inline-flex; align-items: center; gap: 4px; font-size: 9.5px; font-weight: 800; letter-spacing: .4px; text-transform: uppercase; color: #076b54; background: #e6f8f2; border-radius: 10px; padding: 3px 8px; }
+    .ltv-flock svg { width: 11px; height: 11px; }
+    .sfo-r.ltv-no { background: #fdecec; border-radius: 4px; padding: 0 6px; margin: 0 -6px; }
+    .sfo-r.ltv-no span { color: #b91c1c; text-decoration: line-through; text-decoration-thickness: 2px; }
+    .sfo-r.ltv-no em { color: #b91c1c; font-weight: 800; }
+    .sfo.sm { width: 236px; }
+    .ltv-pill { display: inline-flex; align-items: baseline; gap: 10px; margin: 26px auto 0; padding: 10px 22px; border-radius: 24px; background: var(--ay-dark); color: #fff; }
+    .ltv-pill span { font-size: 12px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; opacity: .85; }
+    .ltv-pill b { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .ltv-pill small { font-size: 12px; font-weight: 600; opacity: .8; }
+    /* slide 10: mockup of the Power BI Conversions page (filters top right, conversion funnel, leads by channel) */
+    .pbi { width: 100%; max-width: 980px; margin: 0 auto; background: #eef1f5; border: 1px solid #dfe3e8; border-radius: 10px; box-shadow: 0 6px 22px rgba(0,0,0,.08); text-align: left; position: relative; }
+    .pbi-top { display: flex; align-items: center; gap: 10px; height: 56px; padding: 0 14px; background: #0f2a44; border-radius: 10px 10px 0 0; color: #fff; }
+    .pbi-logo { height: 18px; filter: brightness(0) invert(1); }
+    .pbi-name { font-size: 15px; font-weight: 700; padding-left: 12px; border-left: 1px solid rgba(255,255,255,.4); margin-right: auto; white-space: nowrap; }
+    .pbi-filt { position: relative; display: flex; flex-direction: column; gap: 3px; border: 1px solid rgba(255,255,255,.35); border-radius: 6px; padding: 4px 8px 6px; }
+    .pbi-fl { font-size: 9.5px; font-weight: 700; }
+    .pbi-fr { display: flex; gap: 5px; }
+    .pbi-box { display: flex; align-items: center; justify-content: space-between; gap: 6px; height: 20px; min-width: 66px; padding: 0 6px; background: #fff; color: #252423; border: 0; border-radius: 2px; font: 600 10.5px/1 Lato, sans-serif; box-sizing: border-box; white-space: nowrap; }
+    .pbi-box svg { width: 12px; height: 12px; flex: none; }
+    .pbi-sel { width: 122px; cursor: pointer; }
+    .pbi-bl { width: 96px; }
+    .pbi-menu { display: none; position: absolute; top: 100%; left: 0; margin-top: 4px; width: 150px; background: #fff; border: 1px solid #c8c6c4; border-radius: 4px; box-shadow: 0 8px 20px rgba(0,0,0,.2); padding: 4px 0; z-index: 10; }
+    .pbi-dd.open .pbi-menu { display: block; }
+    .pbi-menu button { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 6px 10px; font: 600 11.5px/1.2 Lato, sans-serif; color: #252423; cursor: pointer; }
+    .pbi-menu button:hover { background: #f3f2f1; }
+    .pbi-menu button.on { color: #118dff; font-weight: 800; }
+    .pbi-body { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+    .pbi-panel { background: #fff; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.08); padding: 9px 14px 8px; }
+    .pbi-pt { font-size: 12px; font-weight: 700; color: #252423; margin-bottom: 7px; }
+    .pbi-chev { display: flex; height: 58px; padding: 0 20px; }
+    .pbi-st { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-left: -8px; padding-left: 10px; clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%, 14px 50%); color: #fff; }
+    .pbi-st:first-child { margin-left: 0; padding-left: 0; clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 0 100%); }
+    .pbi-st:nth-child(1) { background: #dce8fb; color: #252423; } .pbi-st:nth-child(2) { background: #c9dbf7; color: #252423; }
+    .pbi-st:nth-child(3) { background: #a9c4f0; color: #252423; } .pbi-st:nth-child(4) { background: #7fa3e6; }
+    .pbi-st:nth-child(5) { background: #5b84dc; } .pbi-st:nth-child(6) { background: #1e3a6e; }
+    .pbi-st b { font-size: 21px; font-weight: 700; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .pbi-st span { font-size: 10.5px; font-weight: 600; }
+    .slide.active[data-pm="pbi"] .pbi-st { animation: pmk-in .45s ease-out both; }
+    .slide.active[data-pm="pbi"] .pbi-st:nth-child(2) { animation-delay: .1s; } .slide.active[data-pm="pbi"] .pbi-st:nth-child(3) { animation-delay: .2s; }
+    .slide.active[data-pm="pbi"] .pbi-st:nth-child(4) { animation-delay: .3s; } .slide.active[data-pm="pbi"] .pbi-st:nth-child(5) { animation-delay: .4s; }
+    .slide.active[data-pm="pbi"] .pbi-st:nth-child(6) { animation-delay: .5s; }
+    .pbi-rates { display: flex; padding: 5px calc(20px + (100% - 40px) / 12) 0; }
+    .pbi-rates div { flex: 1; text-align: center; }
+    .pbi-rates b { display: block; font-size: 12px; font-weight: 700; color: #252423; font-variant-numeric: tabular-nums; }
+    .pbi-rates span { font-size: 9px; color: #605e5c; }
+    .slide.active[data-pm="pbi"] .pbi-rates { animation: pmk-fade .5s ease 1.1s both; }
+    .pbi-cols { display: flex; align-items: flex-end; gap: 22px; height: 96px; padding: 0 10px; border-bottom: 1px solid #edebe9; }
+    .pbi-col { flex: 1; min-width: 0; height: 100%; display: flex; flex-direction: column-reverse; }
+    .pbi-seg { width: 100%; height: 0; flex: none; transition: height .6s cubic-bezier(.2,.7,.2,1); }
+    .pbi-months { display: flex; gap: 22px; padding: 4px 10px 0; }
+    .pbi-months span { flex: 1; text-align: center; font-size: 9.5px; color: #605e5c; }
+    .pbi-leg { display: flex; gap: 14px; margin-top: 6px; font-size: 9.5px; color: #605e5c; white-space: nowrap; }
+    .pbi-leg span { display: flex; align-items: center; gap: 4px; }
+    .pbi-leg i { width: 8px; height: 8px; border-radius: 50%; }
+    /* slides 11 to 13: Salesforce record icons, and the short form and event badge that land as campaigns */
+    .pmk-camp, .pmk-ctc { display: inline-flex; align-items: center; justify-content: center; width: 15px; height: 15px; border-radius: 4px; background: #f49756; color: #fff; flex: none; vertical-align: -3px; margin-right: 5px; font-style: normal; }
+    .pmk-ctc { background: #a094ed; }
+    .pmk-camp svg, .pmk-ctc svg { width: 10px; height: 10px; }
+    .chip2 .pmk-camp { width: 13px; height: 13px; margin-right: 4px; vertical-align: -2px; }
+    .chip2 .pmk-camp svg { width: 9px; height: 9px; }
+    .slide[data-pm^="infl"] .lc-card { width: 232px; }
+    .sfc-h { display: flex; align-items: center; gap: 9px; }
+    .sfc-ic { width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; flex: none; }
+    .sfc-ic svg { width: 16px; height: 16px; }
+    .sfc-ic.lead { background: #f88962; }
+    .sfc-ic.contact { background: #a094ed; }
+    .sfc-h .lch-t { font-size: 15px; }
+    .sfc-h + .lch-s { margin-top: 8px; }
+    .sfo-who { display: inline-flex; align-items: center; color: #0b5cab; }
+    .pmk-mini { position: absolute; left: 50%; top: -150px; width: 176px; height: 136px; box-sizing: border-box; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 10px 26px rgba(0,0,0,.18); padding: 9px 12px 10px; text-align: left; opacity: 0; pointer-events: none; z-index: 3; transform: translate(-50%, 120px) scale(.25); display: flex; flex-direction: column; gap: 5px; }
+    @keyframes pmk-mini { 0% { opacity: 0; transform: translate(-50%, 10px) scale(.85); } 10%, 78% { opacity: 1; transform: translate(-50%, 0) scale(1); } 100% { opacity: 0; transform: translate(-50%, 120px) scale(.25); } }
+    @keyframes pmk-mini-l { 0% { opacity: 0; transform: translate(-10px, 0) scale(.85); } 10%, 78% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translate(120px, 0) scale(.25); } }
+    .slide.active .pmk-mini { animation: pmk-mini 1.5s ease var(--d, 0s) both; }
+    .pmk-mini.left { left: auto; right: calc(100% + 16px); top: 50%; margin-top: -68px; transform: translate(120px, 0) scale(.25); }
+    .slide.active .pmk-mini.left { animation-name: pmk-mini-l; }
+    .pmk-mini.below { top: calc(100% + 18px); transform: translate(-50%, -120px) scale(.25); }
+    @keyframes pmk-mini-b { 0% { opacity: 0; transform: translate(-50%, -10px) scale(.85); } 10%, 78% { opacity: 1; transform: translate(-50%, 0) scale(1); } 100% { opacity: 0; transform: translate(-50%, -120px) scale(.25); } }
+    .slide.active .pmk-mini.below { animation-name: pmk-mini-b; }
+    .pmk-mh { font-size: 10.5px; font-weight: 800; color: var(--ay-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .pmk-mf { display: flex; flex-direction: column; gap: 1px; }
+    .pmk-mf small { font-size: 7.5px; font-weight: 700; color: var(--ay-gray); line-height: 1.1; }
+    .pmk-mf > span { display: block; height: 16px; border: 1px solid #d6dde5; border-radius: 3px; padding: 0 5px; font-size: 9px; line-height: 14px; color: var(--ay-text); overflow: hidden; white-space: nowrap; box-sizing: border-box; }
+    .pmk-mf em { display: inline-block; font-style: normal; }
+    .pmk-mck { display: flex; align-items: center; gap: 4px; font-size: 7.5px; color: var(--ay-gray); white-space: nowrap; }
+    .pmk-mck i { position: relative; width: 9px; height: 9px; border: 1px solid #b6c2cf; border-radius: 2px; flex: none; }
+    .pmk-mck i b { position: absolute; inset: 0; font-size: 8px; line-height: 9px; text-align: center; color: var(--ay-primary); font-weight: 800; }
+    .pmk-mb { display: block; height: 17px; border-radius: 9px; background: linear-gradient(135deg,#11a9e6,#0ab38c); color: #fff; font-size: 8.5px; font-weight: 800; line-height: 17px; text-align: center; margin-top: auto; }
+    .pmk-mbadge { width: 132px; align-items: center; text-align: center; padding: 0 0 8px; gap: 1px; overflow: hidden; }
+    .pmk-mbh { position: relative; display: block; align-self: stretch; height: 18px; flex: none; background: linear-gradient(135deg,#11a9e6,#0ab38c); margin-bottom: 5px; }
+    .pmk-mbh::after { content: ""; position: absolute; left: 50%; top: 6px; width: 18px; height: 5px; margin-left: -9px; border-radius: 3px; background: #fff; }
+    .pmk-mav { width: 34px; height: 34px; border-radius: 50%; background: #e2e8f0; color: #94a3b8; display: flex; align-items: center; justify-content: center; flex: none; margin-bottom: 3px; }
+    .pmk-mav svg { width: 22px; height: 22px; }
+    .pmk-mbadge b { font-size: 11px; font-weight: 800; color: var(--ay-dark); line-height: 1.2; }
+    .pmk-mbadge small { font-size: 8.5px; color: var(--ay-gray); font-weight: 700; }
+    .pmk-mev { margin-top: 3px; font-size: 8.5px; font-weight: 800; color: #0b5cab; background: #e0f4fe; border-radius: 8px; padding: 1px 7px; white-space: nowrap; }
+    .pmk-mqr { position: absolute; left: 8px; bottom: 8px; width: 18px; height: 18px; border-radius: 2px; background: repeating-conic-gradient(#0f2a44 0 25%, #fff 0 50%) 0 0 / 6px 6px; }
+    .pmk-mscan { position: absolute; left: 6px; bottom: 6px; width: 22px; height: 2px; background: var(--ay-success); box-shadow: 0 0 6px 1px rgba(10,179,140,.6); opacity: 0; }
+    @keyframes pmk-mscan { 0% { opacity: 0; transform: translateY(0); } 20%, 80% { opacity: 1; } 100% { opacity: 0; transform: translateY(-20px); } }
+    .slide.active .pmk-mscan { animation: pmk-mscan .5s ease-in-out var(--d, 0s) both; }
+    .pmk-mok { position: absolute; right: 6px; bottom: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--ay-success); color: #fff; font-size: 9px; font-weight: 800; line-height: 16px; text-align: center; }
+    .pmk-team { display: inline-block; font-size: 10.5px; font-weight: 800; border-radius: 9px; padding: 2px 8px; background: #e2f6fd; color: #0083b8; }
+    .pmk-team.sal { background: #fdeadf; color: #b4521f; }
+    .pmk-team.tel { background: #eee9fa; color: #5b3fb0; }
+    .sfr-t th.num, .sfr-t td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .sfr-t td .pmk-camp { vertical-align: -1px; }
+    .pbi-cta { margin-top: 18px; }
+    .pmk-note { font-size: 11.5px !important; color: var(--ay-light) !important; margin: 10px auto 0 !important; }
+
+    /* slides 11 and 12: form toasts land as campaigns, the Salesforce opportunity fills */
+    .pmk-host { position: relative; }
+    .pmk-toast { position: absolute; left: 50%; top: -42px; display: flex; align-items: center; gap: 6px; white-space: nowrap; background: var(--ay-dark); color: #fff; font-size: 11px; font-weight: 700; padding: 6px 11px; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,.15); opacity: 0; pointer-events: none; z-index: 3; transform: translate(-50%, 44px) scale(.4); }
+    .pmk-toast svg { width: 13px; height: 13px; flex: none; }
+    .slide.active .pmk-toast { animation: pmk-toast 1s ease var(--d, 0s) both; }
+    .pmk-toast.left { left: auto; right: calc(100% + 14px); top: 50%; transform: translate(60px, -50%) scale(.4); }
+    .slide.active .pmk-toast.left { animation-name: pmk-toast-l; }
+    .sfo { width: 282px; flex: none; background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 3px 12px rgba(0,0,0,.06); overflow: hidden; text-align: left; }
+    .sfo-h { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid #eef2f6; background: #f8fafc; }
+    .sfo-ic { width: 30px; height: 30px; border-radius: 7px; background: #fcb95b; color: #fff; display: flex; align-items: center; justify-content: center; flex: none; }
+    .sfo-ic svg { width: 17px; height: 17px; }
+    .sfo-k { font-size: 10px; font-weight: 700; color: var(--ay-gray); text-transform: uppercase; letter-spacing: .8px; }
+    .sfo-n { font-size: 15px; font-weight: 800; color: var(--ay-dark); line-height: 1.2; }
+    .sfo-s { font-size: 10.5px; color: var(--ay-gray); }
+    .sfo-lh { padding: 10px 14px 6px; font-size: 12px; font-weight: 800; color: var(--ay-dark); }
+    .sfo-list { padding: 0 14px 12px; }
+    .sfo-r { display: flex; justify-content: space-between; align-items: center; gap: 8px; height: 25px; border-top: 1px solid #f1f5f9; font-size: 12px; }
+    .sfo-r span { color: #0b5cab; font-weight: 700; white-space: nowrap; }
+    .sfo-r em { font-style: normal; font-size: 10.5px; color: var(--ay-gray); font-weight: 600; white-space: nowrap; }
+
+    /* slide 13: the full Salesforce record */
+    .sfr { width: 100%; max-width: 900px; margin: 0 auto; background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.06); overflow: hidden; text-align: left; }
+    .sfr .sfo-h { padding: 14px 20px; }
+    .sfr-n { font-size: 18px; font-weight: 800; color: var(--ay-dark); }
+    .sfr-fields { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 12px 20px; border-bottom: 1px solid #eef2f6; }
+    .sfr-fields span { display: block; font-size: 10.5px; color: var(--ay-gray); font-weight: 600; }
+    .sfr-fields b { font-size: 13.5px; color: var(--ay-dark); }
+    .sfr-lh { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px 8px; font-size: 13px; font-weight: 800; color: var(--ay-dark); }
+    .sfr-t { width: calc(100% - 40px); margin: 0 20px 14px; border-collapse: collapse; font-size: 12.5px; table-layout: fixed; }
+    .sfr-t th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: .6px; color: var(--ay-gray); font-weight: 700; padding: 6px 8px; background: #f8fafc; border-bottom: 1px solid #e5e7eb; }
+    .sfr-t td { padding: 0 8px; height: 29px; border-bottom: 1px solid #f1f5f9; color: var(--ay-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sfr-t td:first-child { color: #0b5cab; font-weight: 700; }
+
+    /* slide 14: metrics build, the chosen ones are circled and rise into KPI, KPI rise into the OKR */
+    .slide[data-pm="pyr"] .pyramid { position: relative; }
+    .pmk-ghost { position: absolute; margin: 0; z-index: 5; pointer-events: none; box-shadow: 0 0 0 2.5px var(--ay-primary), 0 6px 16px rgba(17,169,230,.35); background: #fff; }
+    .slide.active[data-pm="pyr"] .tier.met { animation: pmk-in .55s ease-out .2s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip { animation: pmk-pop .4s ease-out both; }
+    .slide.active[data-pm="pyr"] .tier.kpi { animation: pmk-fade .5s ease 1.9s both; }
+    .slide.active[data-pm="pyr"] .tier.kpi .tchip { animation: pmk-fade .4s ease 2.8s both; }
+    .slide.active[data-pm="pyr"] .tier.okr { animation: pmk-fade .5s ease 3.7s both; }
+    .slide.active[data-pm="pyr"] .tier.okr .tcontent { animation: pmk-fade .4s ease 4.5s both; }
+    .slide.active[data-pm="pyr"] .park { animation: pmk-fade .5s ease 5s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(1) { animation: pmk-pop .4s ease-out 0.35s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(2) { animation: pmk-pop .4s ease-out 0.42s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(3) { animation: pmk-pop .4s ease-out 0.49s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(4) { animation: pmk-pop .4s ease-out 0.56s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(5) { animation: pmk-pop .4s ease-out 0.63s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(6) { animation: pmk-pop .4s ease-out 0.7s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(7) { animation: pmk-pop .4s ease-out 0.77s both, pmk-ring .4s ease 1.45s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(8) { animation: pmk-pop .4s ease-out 0.84s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(9) { animation: pmk-pop .4s ease-out 0.91s both, pmk-ring .4s ease 1.45s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(10) { animation: pmk-pop .4s ease-out 0.98s both, pmk-ring .4s ease 1.45s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(11) { animation: pmk-pop .4s ease-out 1.05s both, pmk-ring .4s ease 1.45s both; }
+    .slide.active[data-pm="pyr"] .tier.met .tchip:nth-child(12) { animation: pmk-pop .4s ease-out 1.12s both, pmk-ring .4s ease 1.45s both; }
+    .slide.active[data-pm="pyr"] .tier.kpi .tchip:nth-child(1) { animation: pmk-pop .45s ease-out 2.6s both, pmk-ring .4s ease 3.3s both; }
+    .slide.active[data-pm="pyr"] .tier.kpi .tchip:nth-child(2) { animation: pmk-pop .45s ease-out 2.6s both, pmk-ring .4s ease 3.3s both; }
+    .slide.active[data-pm="pyr"] .tier.kpi .tchip:nth-child(3) { animation: pmk-pop .45s ease-out 2.6s both, pmk-ring .4s ease 3.3s both; }
+    .slide.active[data-pm="pyr"] .tier.okr { animation: pmk-fade .5s ease 3.7s both, pmk-glow 1s ease-out 4.5s both; }
+    /* slide 15: each blind spot drops a dot into direct */
+    .slide.active[data-pm="bias"] .bias { animation: pmk-in .5s ease-out both; }
+    .slide.active[data-pm="bias"] .bias:nth-child(1) { animation-delay: .2s; }
+    .slide.active[data-pm="bias"] .bias:nth-child(2) { animation-delay: .4s; }
+    .slide.active[data-pm="bias"] .bias:nth-child(3) { animation-delay: .6s; }
+    .slide.active[data-pm="bias"] .bias:nth-child(4) { animation-delay: .8s; }
+    .bias-conn { position: relative; }
+    .pmk-dots { position: absolute; left: 4px; right: 4px; bottom: 15px; height: 10px; }
+    .pmk-dots i { position: absolute; top: 0; left: 0; width: 10px; height: 10px; border-radius: 50%; background: #94a3b8; opacity: 0; }
+    .slide.active .pmk-dots i { animation: pmk-wire .6s ease-in var(--d, 0s) both; }
+    .slide.active[data-pm="bias"] .bias-sink { animation: pmk-glow 1s ease-out 2.8s both; }
+    .slide.active[data-pm="bias"] .coda { animation: pmk-in .6s ease-out 3.2s both; }
+
+    /* slide 16: what the system explains, then what truly remains */
+    .slide.active[data-pm="direct"] .dcol.got .di { animation: pmk-in .5s ease-out both; }
+    .slide.active[data-pm="direct"] .dcol.got .di:nth-of-type(2) { animation-delay: .3s; }
+    .slide.active[data-pm="direct"] .dcol.got .di:nth-of-type(3) { animation-delay: .55s; }
+    .slide.active[data-pm="direct"] .dcol.got .di:nth-of-type(4) { animation-delay: .8s; }
+    .slide.active[data-pm="direct"] .dcol.got .di:nth-of-type(5) { animation-delay: 1.05s; }
+    .slide.active[data-pm="direct"] .dcol.rest { animation: pmk-in .6s ease-out 1.6s both, pmk-glow 1s ease-out 2.1s both; }
+    .slide.active[data-pm="direct"] .coda { animation: pmk-in .6s ease-out 2.8s both; }
+
+    /* slide 17: the share counts up, then its reading */
+    .slide.active[data-pm="hyg"] .big-sub { animation: pmk-in .6s ease-out 1.5s both; }
+    .slide.active[data-pm="hyg"] .coda { animation: pmk-in .6s ease-out 2.2s both; }
+
+    /* slide 18: the horizon, line by line */
+    .slide.active[data-pm="hz"] .horizon li { animation: pmk-in .5s ease-out both; }
+    .slide.active[data-pm="hz"] .horizon li:nth-child(1) { animation-delay: .2s; }
+    .slide.active[data-pm="hz"] .horizon li:nth-child(2) { animation-delay: .5s; }
+    .slide.active[data-pm="hz"] .horizon li:nth-child(3) { animation-delay: .8s; }
+    .slide.active[data-pm="hz"] .horizon li:nth-child(4) { animation-delay: 1.1s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .slide.active *, .slide.active { animation: none !important; transition: none !important; }
+    }
+
+    /* ===== SLIDES: a 100k contract shared across the four sources, then each share against its cost.
+       Source colours and icons repeat the lead-sources slide. Every card, row and bar has a fixed size. ===== */
+    .spl { width: 100%; max-width: 940px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; text-align: left; }
+    .spl-opp { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.06); overflow: hidden; }
+    .spl-opp .sfo-h { padding: 12px 20px; gap: 12px; border-bottom: 0; }
+    .spl-opp .sfo-h > div:nth-child(2) { flex: 1; }
+    .spl-f { text-align: right; margin-left: 30px; width: 150px; flex: none; }
+    .spl-f span { display: block; font-size: 10.5px; color: var(--ay-gray); font-weight: 600; }
+    .spl-f b { display: block; font-size: 16px; color: var(--ay-dark); font-weight: 800; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .spl-f b.roi-t { color: #076b54; }
+    .spl-lh { padding: 9px 20px; font-size: 13px; font-weight: 800; color: var(--ay-dark); border-top: 1px solid #eef2f6; }
+    .spl-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .spl-c { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.05); padding: 11px 14px; display: flex; flex-direction: column; gap: 7px; height: 94px; box-sizing: border-box; }
+    .spl-c.tall { height: 196px; }
+    .spl-cn { font-size: 12.5px; font-weight: 700; color: #0b5cab; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .spl-r { display: flex; justify-content: space-between; align-items: baseline; font-size: 11.5px; color: var(--ay-gray); font-weight: 600; white-space: nowrap; }
+    .spl-r b { color: var(--ay-dark); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .spl-cap { font-size: 14px; color: var(--ay-text); line-height: 1.5; text-align: center; margin: 4px auto 0; max-width: 860px; }
+    .spl-cap b { color: var(--ay-dark); font-weight: 800; }
+    .roi-x { display: flex; align-items: baseline; justify-content: space-between; margin-top: 12px; }
+    .dv { font-style: normal; font-weight: 700; color: var(--ay-gray); margin-right: 5px; }
+    .spl-r.tot { border-top: 1.5px solid var(--ay-dark); padding-top: 5px; margin-top: -2px; }
+    .rise-f.tot { border-top: 2px solid var(--ay-dark); margin: 0 18px; padding: 10px 0; }
+    .roi-x span { font-size: 11.5px; color: var(--ay-gray); font-weight: 600; }
+    .roi-x b { font-size: 19px; font-weight: 800; color: #076b54; line-height: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .roi-m { height: 8px; border-radius: 4px; background: #eef2f6; overflow: hidden; }
+    .roi-m i { display: block; height: 100%; width: var(--w); background: var(--ay-success); border-radius: 4px; transform-origin: left center; }
+    .slide.active[data-pm="roi"] .roi-m i { animation: pmk-grow .7s ease-out var(--d, 0s) both; }
+
+    /* the four sources share one colour each across the influence block: pills, chips, card borders, bars */
+    .pmk-team.par, .chip2.par { background: #dde7ef; color: #004A76; }
+    .chip2.tel { background: #eee9fa; color: #5b3fb0; }
+    .spl-c > .pmk-team { align-self: flex-start; }
+    .sfo-ic.camp { background: #f49756; }
+    .cmp-bar.lab { height: 22px; border-radius: 6px; gap: 3px; }
+    .cmp-bar.lab i { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 10.5px; font-weight: 800; font-style: normal; border-radius: 4px; }
+    /* one campaign over several signed contracts: its influenced TCV adds up against a fixed cost */
+    .rise { display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 24px; width: 100%; max-width: 940px; margin: 0 auto; text-align: left; align-items: start; }
+    .rise-camp, .rise-opps { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.06); overflow: hidden; }
+    .rise-camp .sfo-h { padding: 12px 18px; }
+    .rise-camp .sfo-h > div:nth-child(2) { flex: 1; }
+    .rise-f { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 18px; border-top: 1px solid #eef2f6; font-size: 12.5px; color: var(--ay-gray); font-weight: 600; }
+    .rise-f b { font-size: 17px; color: var(--ay-dark); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .rise-x { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 18px 8px; border-top: 1px solid #eef2f6; font-size: 12.5px; color: var(--ay-gray); font-weight: 600; }
+    .rise-x b { font-size: 24px; font-weight: 800; color: #076b54; line-height: 1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .rise-m { margin: 0 18px 16px; height: 10px; border-radius: 5px; }
+    .rise-m i { transition: width .7s ease-out; }
+    .rise-opps .spl-lh { border-top: 0; background: #f8fafc; border-bottom: 1px solid #eef2f6; }
+    .rise-r { display: flex; align-items: center; gap: 12px; height: 58px; padding: 0 18px; border-bottom: 1px solid #f1f5f9; }
+    .rise-r .sfo-ic { width: 26px; height: 26px; }
+    .rise-r .sfo-ic svg { width: 15px; height: 15px; }
+    .rise-n { flex: 1; min-width: 0; }
+    .rise-n b { display: block; font-size: 14px; color: #0b5cab; font-weight: 800; }
+    .rise-n small { font-size: 11.5px; color: var(--ay-gray); font-weight: 600; }
+    .rise-p { font-size: 15px; font-weight: 800; color: #076b54; background: #e6f8f2; border-radius: 10px; padding: 3px 10px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    /* the sales target counts the whole contract, the campaign shares only measure ROI */
+    .obj { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%; max-width: 940px; margin: 0 auto; text-align: left; align-items: start; }
+    .obj-c, .bns-c { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,.06); overflow: hidden; }
+    .obj-c .sfo-h, .bns-c .sfo-h { padding: 12px 18px; }
+    .obj-c .sfo-h > div:nth-child(2), .bns-c .sfo-h > div:nth-child(2) { flex: 1; }
+    .sfo-ic.tgt { background: #0b5cab; }
+    .obj-big { padding: 16px 18px 12px; border-top: 1px solid #eef2f6; }
+    .obj-big span { display: block; font-size: 12.5px; color: var(--ay-gray); font-weight: 600; }
+    .obj-big b { display: block; font-size: 32px; font-weight: 800; color: var(--ay-dark); line-height: 1.2; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .obj-bar { display: flex; height: 14px; margin: 0 18px 16px; border-radius: 7px; background: #eef2f6; overflow: hidden; gap: 2px; }
+    .obj-bar i { display: block; height: 100%; flex: 1 1 0; transform-origin: left center; }
+    .obj-bar i.tgt { background: #0b5cab; }
+    .obj-bar i.mkt { background: #11a9e6; }
+    .obj-bar i.par { background: #004A76; }
+    .obj-bar i.tel { background: #5b3fb0; }
+    .obj-bar i.sal { background: #b4521f; }
+    .slide.active[data-pm="obj"] .obj-bar i { animation: pmk-grow .55s ease-out var(--d, 0s) both; }
+    .obj-r { display: flex; justify-content: space-between; align-items: center; gap: 10px; height: 38px; padding: 0 18px; border-top: 1px solid #f1f5f9; font-size: 12.5px; color: var(--ay-gray); font-weight: 600; white-space: nowrap; }
+    .obj-r b { color: var(--ay-dark); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .obj-r .obj-n { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; color: #0b5cab; font-weight: 700; }
+    /* the contact's first campaign earns a weight of 2 while it stays inside the influence window */
+    .bns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; width: 100%; max-width: 940px; margin: 0 auto; text-align: left; align-items: start; }
+    .bns-c .spl-f { margin-left: 12px; width: auto; }
+    .bns-lh { display: flex; justify-content: space-between; align-items: center; height: 36px; padding: 0 18px; font-size: 12.5px; font-weight: 800; color: var(--ay-dark); background: #f8fafc; border-top: 1px solid #eef2f6; border-bottom: 1px solid #eef2f6; white-space: nowrap; }
+    .bns-r { height: 48px; box-sizing: border-box; padding: 5px 18px 0; border-bottom: 1px solid #f1f5f9; }
+    .bns-t { display: flex; align-items: center; gap: 8px; height: 20px; font-size: 12.5px; white-space: nowrap; }
+    .bns-n { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; color: #0b5cab; font-weight: 700; }
+    .bns-t > b { width: 78px; flex: none; text-align: right; font-weight: 800; color: var(--ay-dark); font-variant-numeric: tabular-nums; }
+    .bns-m { display: flex; align-items: center; gap: 8px; height: 18px; margin-top: 4px; }
+    .bns-m .roi-m { flex: 1; height: 6px; }
+    .bns-m .roi-m i { background: var(--ay-primary); transition: width .7s ease-out; }
+    .bns-m em { width: 40px; flex: none; text-align: right; font-style: normal; font-size: 11px; font-weight: 700; color: var(--ay-gray); font-variant-numeric: tabular-nums; }
+    .bns-b { display: inline-flex; align-items: center; gap: 3px; flex: none; font-size: 9.5px; font-weight: 800; letter-spacing: .4px; text-transform: uppercase; color: #076b54; background: #e6f8f2; border-radius: 9px; padding: 2px 7px; }
+    .bns-b svg { width: 10px; height: 10px; }
+    .bns-x { font-size: 9.5px; font-weight: 800; letter-spacing: .4px; text-transform: uppercase; color: #b91c1c; background: #fdecec; border-radius: 9px; padding: 2px 8px; white-space: nowrap; }
+    .slide.active[data-pm="bonus"] .bns-r.first { animation: pmk-row .45s ease-out var(--d, 0s) both, pmk-win .6s ease 2s forwards; }
+    .slide.active[data-pm="bonus"] .bns-r.off .bns-t { animation: pmk-off .6s ease 5s forwards; }
+    .bns-r.off .bns-n { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: transparent; }
+    .slide.active[data-pm="bonus"] .bns-r.off .bns-n { animation: pmk-strike .6s ease 5s forwards; }
+    .slide.active[data-pm="bonus"] .bns-c.later .roi-m i { animation: pmk-grow .6s ease-out var(--d, 0s) both; }
+
+    /* dividers: the OKR slide emptied of its title, its KR blocks fly to the badge of the slide that follows */
+    .okr-div .okr-fade { opacity: 0; }
+    .okr-div .kr.kr-dim { opacity: .5; }
+    .okr-div .kr { transform-origin: 0 0; }
+    .kr-ghost { position: absolute; margin: 0; z-index: 8; box-sizing: border-box; transform-origin: 0 0; pointer-events: none; }
+    .prc { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; width: 100%; max-width: 1060px; margin: 0 auto; text-align: left; }
+    .prc .kr { height: 236px; box-sizing: border-box; }
+    .prc-ic { width: 38px; height: 38px; border-radius: 10px; background: #fff; color: var(--ay-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+    .prc-ic svg { width: 20px; height: 20px; }
+    /* target slide: each campaign's share set against its cost, the ROI view of every source */
+    .obj { grid-template-columns: 340px minmax(0, 1fr); }
+    .obj-roi .obj-h, .obj-roi .obj-r.roi { display: grid; grid-template-columns: minmax(0, 1fr) 76px 84px 84px 44px; gap: 8px; align-items: center; }
+    .obj-roi .obj-h { height: 28px; padding: 0 18px; border-top: 1px solid #f1f5f9; background: #f8fafc; font-size: 10px; font-weight: 700; color: var(--ay-gray); text-transform: uppercase; letter-spacing: .6px; }
+    .obj-roi .obj-h span:not(:first-child), .obj-roi .obj-r.roi > :not(.obj-n) { text-align: right; justify-self: end; }
+    .obj-roi .obj-r.roi > .pmk-team { justify-self: start; }
+    .obj-roi .obj-r .cost { color: var(--ay-gray); font-weight: 700; font-variant-numeric: tabular-nums; }
+    .obj-roi .obj-r .roi-v { color: #076b54; font-weight: 800; font-variant-numeric: tabular-nums; }
+    /* bonus slide: every row keeps the same slot for the first-campaign flag, so all bar tracks match */
+    .bns-slot { width: 112px; flex: none; display: flex; justify-content: flex-end; }
+    /* the clarification badges sit above the content, so these two slides start lower */
+    .slide[data-pm="obj"] .slide-inner, .slide[data-pm="bonus"] .slide-inner { padding-top: 84px; }
+    /* a KR badge is its OKR block scaled down, so the move between them is a pure scale, like a screen grab */
+    .kr-badge.kr-snap { padding: 0; background: none; border-radius: 0; max-width: none; width: 0; height: 0; overflow: visible; }
+    .kr-snap > .kr { width: max-content; white-space: nowrap; transform: scale(.72); transform-origin: 0 0; }
+    .kr-ghost, .kr-ghost * { transition: none !important; }
+    /* shared review copy: a fixed badge on every slide says it awaits validation */
+    .val-flag { position: fixed; top: 14px; left: 50%; transform: translateX(-50%); z-index: 1000; display: inline-flex; align-items: center; gap: 8px;
+      background: #fff7ed; color: #b4521f; border: 1px solid #f6c9a8; border-radius: 999px; padding: 6px 14px; font-family: Lato, sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; box-shadow: 0 2px 8px rgba(0,0,0,.06); pointer-events: none; }
+    .val-flag small { font-size: 11px; font-weight: 600; letter-spacing: 0; text-transform: none; color: #9a5a2e; }
+    .val-div .slide-inner { justify-content: center; }
+    .val-div .slide-title { margin-bottom: 14px; }
+    .val-div .slide-subtitle { margin: 0 auto; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Chapter Navigation -->
+  <nav class="chapter-nav">
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+    <div class="nav-header">
+      <div class="nav-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+      <span class="nav-subtitle">Performance marketing · June 2026</span>
+    </div>
+    <div class="nav-section">
+      <div class="nav-section-title">The current model</div>
+      <div class="nav-item active" data-slide="0"><span class="nav-item-number">01</span>Campaign Influence</div>
+      <div class="nav-item" data-slide="1"><span class="nav-item-number">02</span>Influenced TCV and cost</div>
+      <div class="nav-item" data-slide="2"><span class="nav-item-number">03</span>Last touch vs contribution</div>
+      <div class="nav-item" data-slide="3"><span class="nav-item-number">04</span>A ratio that rises</div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-section-title">Proposals</div>
+      <div class="nav-item" data-slide="4"><span class="nav-item-number">05</span>My proposals</div>
+      <div class="nav-item" data-slide="5"><span class="nav-item-number">06</span>Three proposals</div>
+      <div class="nav-item" data-slide="6"><span class="nav-item-number">07</span>Frozen influence, customer value</div>
+      <div class="nav-item" data-slide="7"><span class="nav-item-number">08</span>Target and ROI share</div>
+      <div class="nav-item" data-slide="8"><span class="nav-item-number">09</span>First-campaign bonus</div>
+    </div>
+  </nav>
+
+  <div class="slide-counter"><span class="current">1</span>/9</div>
+
+  <div class="val-flag" role="note">To be validated <small>· Working draft</small></div>
+  <main class="presentation">
+    <!-- ========== CAMPAIGN INFLUENCE EN ACTION (le contrat de 100 000 €, une campagne par source) ========== -->
+    <section class="slide active" data-chapter="cadre" data-pm="ci">
+      <div class="slide-inner insights">
+        <h1 class="slide-title compact">Campaign Influence</h1>
+        <div class="sfr pmk-in" style="--d:.1s">
+          <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity</div><div class="sfr-n">Entreprise SA · Absenteeism programme</div></div></div>
+          <div class="sfr-fields">
+            <div><span>Amount (TCV)</span><b>€100,000</b></div>
+            <div><span>Origin</span><b>Partners · breakfast</b></div>
+            <div><span>Influence model</span><b>Even Distribution</b></div>
+          </div>
+          <div class="sfr-lh"><span>Campaign Influence (<span data-pm-start="0" data-pm-at="0.9,1.2,1.5,1.8">4</span>)</span></div>
+          <table class="sfr-t">
+            <thead><tr><th style="width:32%">Campaign</th><th style="width:19%">Record type</th><th style="width:19%">Contact</th><th class="num" style="width:13%">Influence</th><th class="num">TCV share</th></tr></thead>
+            <tbody>
+                <tr class="pmk-row" style="--d:0.9s"><td><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</td><td><span class="pmk-team">Marketing</span></td><td>Claire Martin</td><td class="num">25%</td><td class="num">€25,000</td></tr>
+                <tr class="pmk-row" style="--d:1.2s"><td><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</td><td><span class="pmk-team par">Partner</span></td><td>Claire Martin</td><td class="num">25%</td><td class="num">€25,000</td></tr>
+                <tr class="pmk-row" style="--d:1.5s"><td><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting Q2</td><td><span class="pmk-team tel">Telepro</span></td><td>Marc Dubois</td><td class="num">25%</td><td class="num">€25,000</td></tr>
+                <tr class="pmk-row" style="--d:1.8s"><td><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2026</td><td><span class="pmk-team sal">Sales</span></td><td>Marc Dubois</td><td class="num">25%</td><td class="num">€25,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== TCV INFLUENCÉE ET COÛT, SUR UN CONTRAT (le ratio demandé, illustratif) ========== -->
+    <section class="slide" data-chapter="cadre" data-pm="roi">
+      <div class="slide-inner insights">
+        <h1 class="slide-title compact">Each source sets its influenced TCV against its cost</h1>
+        <div class="spl">
+          <div class="spl-opp pmk-in" style="--d:.1s">
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity · signed (P4)</div><div class="sfo-n">Entreprise SA</div></div><div class="spl-f"><span>TCV</span><b>€100,000</b></div><div class="spl-f"><span>Campaign costs</span><b class="pmk-pop" style="--d:4.3s">€48,750</b></div><div class="spl-f"><span>ROI</span><b class="roi-t pmk-pop" style="--d:4.6s">×2.1</b></div></div>
+          </div>
+          <div class="spl-grid">
+            <div class="spl-c tall pmk-in" style="--d:0.4s"><span class="pmk-team">Marketing</span><div class="spl-cn"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</div><div class="spl-r"><span>TCV share</span><b>€25,000</b></div><div class="spl-r"><span>Campaign cost</span><b class="pmk-pop" style="--d:1.9s"><i class="dv">÷</i>€12,500</b></div><div class="spl-r tot"><span>Ratio</span><b class="pmk-pop" style="--d:3.3s">2</b></div><div class="roi-x"><span>ROI</span><b class="pmk-pop" style="--d:3.6s">×2</b></div><div class="roi-m"><i style="--w:40%; --d:3.3s"></i></div></div>
+            <div class="spl-c tall pmk-in" style="--d:0.6s"><span class="pmk-team par">Partner</span><div class="spl-cn"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</div><div class="spl-r"><span>TCV share</span><b>€25,000</b></div><div class="spl-r"><span>Campaign cost</span><b class="pmk-pop" style="--d:1.6s"><i class="dv">÷</i>€5,000</b></div><div class="spl-r tot"><span>Ratio</span><b class="pmk-pop" style="--d:3.0s">5</b></div><div class="roi-x"><span>ROI</span><b class="pmk-pop" style="--d:3.3s">×5</b></div><div class="roi-m"><i style="--w:100%; --d:3.0s"></i></div></div>
+            <div class="spl-c tall pmk-in" style="--d:0.8s"><span class="pmk-team tel">Telepro</span><div class="spl-cn"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting Q2</div><div class="spl-r"><span>TCV share</span><b>€25,000</b></div><div class="spl-r"><span>Campaign cost</span><b class="pmk-pop" style="--d:2.2s"><i class="dv">÷</i>€6,250</b></div><div class="spl-r tot"><span>Ratio</span><b class="pmk-pop" style="--d:3.6s">4</b></div><div class="roi-x"><span>ROI</span><b class="pmk-pop" style="--d:3.9s">×4</b></div><div class="roi-m"><i style="--w:80%; --d:3.6s"></i></div></div>
+            <div class="spl-c tall pmk-in" style="--d:1.0s"><span class="pmk-team sal">Sales</span><div class="spl-cn"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2026</div><div class="spl-r"><span>TCV share</span><b>€25,000</b></div><div class="spl-r"><span>Campaign cost</span><b class="pmk-pop" style="--d:2.5s"><i class="dv">÷</i>€25,000</b></div><div class="spl-r tot"><span>Ratio</span><b class="pmk-pop" style="--d:3.9s">1</b></div><div class="roi-x"><span>ROI</span><b class="pmk-pop" style="--d:4.2s">×1</b></div><div class="roi-m"><i style="--w:20%; --d:3.9s"></i></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== DU DERNIER CONTACT À LA CONTRIBUTION (le dernier contact prend tout, le partage égal montre les quatre sources) ========== -->
+    <section class="slide" data-chapter="cadre" data-pm="cmp">
+      <div class="slide-inner insights">
+        <h1 class="slide-title compact">Every campaign that counted gets its share</h1>
+        <div class="cmp">
+          <div class="cmp-p">
+            <span class="cmp-tag old">Today · last touch</span>
+            <div class="cmp-card">
+              <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity</div><div class="sfo-n">Entreprise SA · €100,000</div></div></div>
+              <div class="cmp-f"><span>Primary Campaign Source</span><b class="pmk-fade" style="--d:2.7s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</b></div>
+              <div class="cmp-list">
+                <div class="cmp-lh">Credit by campaign (4)</div>
+                <div class="cmp-r off" style="--d:0.3s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</span><span class="pmk-team par">Partner</span><em class="pmk-fade" style="--d:2.5s">€0</em></div>
+                <div class="cmp-r off" style="--d:0.6s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting Q2</span><span class="pmk-team tel">Telepro</span><em class="pmk-fade" style="--d:2.5s">€0</em></div>
+                <div class="cmp-r off" style="--d:0.9s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2026</span><span class="pmk-team sal">Sales</span><em class="pmk-fade" style="--d:2.5s">€0</em></div>
+                <div class="cmp-r win" style="--d:1.2s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</span><span class="pmk-team">Marketing</span><em class="pmk-fade" style="--d:2.7s">100% · €100,000</em></div>
+              </div>
+            </div>
+          </div>
+          <div class="cmp-p pmk-in" style="--d:3.3s">
+            <span class="cmp-tag new">With Campaign Influence</span>
+            <div class="cmp-card">
+              <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity</div><div class="sfo-n">Entreprise SA · €100,000</div></div></div>
+              <div class="cmp-f"><span>Influence model</span><b class="pmk-fade" style="--d:3.5s">Even Distribution</b></div>
+              <div class="cmp-list">
+                <div class="cmp-lh">Credit by campaign (4)</div>
+                <div class="cmp-r pmk-row" style="--d:3.6s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</span><span class="pmk-team par">Partner</span><em class="pmk-pop" style="--d:5.0s">25% · €25,000</em></div>
+                <div class="cmp-r pmk-row" style="--d:3.9s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting Q2</span><span class="pmk-team tel">Telepro</span><em class="pmk-pop" style="--d:5.0s">25% · €25,000</em></div>
+                <div class="cmp-r pmk-row" style="--d:4.2s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2026</span><span class="pmk-team sal">Sales</span><em class="pmk-pop" style="--d:5.0s">25% · €25,000</em></div>
+                <div class="cmp-r pmk-row" style="--d:4.5s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</span><span class="pmk-team">Marketing</span><em class="pmk-pop" style="--d:5.0s">25% · €25,000</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== UN RATIO QUI MONTE (une campagne, plusieurs contrats signés) ========== -->
+    <section class="slide" data-chapter="cadre" data-pm="rise">
+      <div class="slide-inner insights">
+        <h1 class="slide-title compact">A campaign's ratio rises with every signed contract</h1>
+        <div class="rise">
+          <div class="rise-camp pmk-in" style="--d:.1s">
+            <div class="sfo-h"><span class="sfo-ic camp"><i data-lucide="megaphone"></i></span><div><div class="sfo-k">Campaign</div><div class="sfo-n">Barometer whitepaper</div></div><span class="pmk-team">Marketing</span></div>
+            <div class="rise-f"><span>Influenced TCV</span><b data-rise="0,25000,55000,87500" data-rise-at="1.6,3.2,4.8" data-pm-fmt="eur0">€87,500</b></div>
+            <div class="rise-f"><span>Campaign cost</span><b><i class="dv">÷</i>€12,500</b></div>
+            <div class="rise-f tot"><span>Ratio</span><b data-rise="0,2,4.4,7" data-rise-at="1.6,3.2,4.8" data-pm-fmt="r1">7</b></div>
+            <div class="rise-x"><span>ROI</span><b data-rise="0,2,4.4,7" data-rise-at="1.6,3.2,4.8" data-pm-fmt="coef">×7</b></div>
+            <div class="roi-m rise-m"><i data-rise-bar data-rise="0,28.6,62.9,100" data-rise-at="1.6,3.2,4.8" style="width:100%"></i></div>
+          </div>
+          <div class="rise-opps pmk-in" style="--d:.3s">
+            <div class="spl-lh">Signed opportunities (<span data-pm-start="0" data-pm-at="1.0,2.6,4.2">3</span>)</div>
+              <div class="rise-r pmk-row" style="--d:1.0s"><span class="sfo-ic"><i data-lucide="crown"></i></span><div class="rise-n"><b>Entreprise SA</b><small>€100,000 · 4 campaigns</small></div><span class="rise-p pmk-pop" style="--d:1.5s">+€25,000</span></div>
+              <div class="rise-r pmk-row" style="--d:2.6s"><span class="sfo-ic"><i data-lucide="crown"></i></span><div class="rise-n"><b>Nord Ltd</b><small>€90,000 · 3 campaigns</small></div><span class="rise-p pmk-pop" style="--d:3.1s">+€30,000</span></div>
+              <div class="rise-r pmk-row" style="--d:4.2s"><span class="sfo-ic"><i data-lucide="crown"></i></span><div class="rise-n"><b>Sud Group</b><small>€65,000 · 2 campaigns</small></div><span class="rise-p pmk-pop" style="--d:4.7s">+€32,500</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== DIVIDER, MY PROPOSALS ========== -->
+    <section class="slide val-div" data-chapter="propositions">
+      <div class="slide-inner insights">
+        <h1 class="slide-title">My proposals for the model</h1>
+        <p class="slide-subtitle">Based on first feedback from sales and marketing</p>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== DIVIDER PRÉCISIONS (three clarifications, the first flies to its badge) ========== -->
+    <section class="slide" data-chapter="precisions">
+      <div class="slide-inner insights">
+        <h1 class="slide-title compact">Three proposals</h1>
+        <div class="prc">
+          <div class="kr pmk-in" style="--d:0.20s"><div class="prc-ic"><i data-lucide="lock"></i></div><div class="kl"><b>Proposal 1</b> · influence</div><div class="kh">Frozen influence</div><div class="ks">A campaign that comes after creation is not added. Customer value (LTV) brings the opportunities together to cover the contact's total cost.</div></div>
+          <div class="kr pmk-in" style="--d:0.45s"><div class="prc-ic"><i data-lucide="target"></i></div><div class="kl"><b>Proposal 2</b> · targets</div><div class="kh">Sales target</div><div class="ks">The whole contract counts toward the sales target, each campaign's share measures ROI.</div></div>
+          <div class="kr pmk-in" style="--d:0.70s"><div class="prc-ic"><i data-lucide="flag"></i></div><div class="kl"><b>Proposal 3</b> · credit</div><div class="kh">First-campaign bonus</div><div class="ks">The contact's first campaign counts double while it stays in the influence.</div></div>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <section class="slide" data-chapter="precisions" data-pm="ltv">
+      <div class="kr-badge">
+        <div class="kl"><b>Proposal 1</b> · influence</div>
+        <div class="kh">Frozen influence</div>
+        <div class="ks">A campaign that comes after creation is not added. Customer value (LTV) brings the opportunities together to cover the contact's total cost.</div>
+      </div>
+      <div class="slide-inner insights">
+        <div class="lc ltv-lc">
+          <div class="lc-card pmk-host pmk-in" style="--d:.1s">
+            <div class="pmk-mini pmk-mbadge below" style="--d:0.4s"><span class="pmk-mbh"></span><span class="pmk-mav"><i data-lucide="user-round"></i></span><b>Claire Martin</b><small>Entreprise SA</small><span class="pmk-mev">Trade show</span><i class="pmk-mqr"></i><span class="pmk-mscan" style="--d:0.70s"></span><span class="pmk-mok pmk-pop" style="--d:1.25s">✓</span></div>
+            <div class="pmk-mini pmk-mform below" style="--d:1.9s"><b class="pmk-mh">Whitepaper · Barometer</b><span class="pmk-mf"><small>Name</small><span><em class="pmk-type" style="--d:2.15s; --t:.35s; --n:13">Claire Martin</em></span></span><span class="pmk-mf"><small>Email</small><span><em class="pmk-type" style="--d:2.50s; --t:.4s; --n:22">c.martin@entreprise.fr</em></span></span><span class="pmk-mck"><i><b class="pmk-pop" style="--d:2.85s">✓</b></i>I agree to be contacted</span><span class="pmk-mb pmk-press" style="--d:2.95s">Download</span></div>
+            <div class="pmk-mini pmk-mvideo below" style="--d:3.4s"><div class="pmk-mv-top"><b>On call</b><span>08:42</span></div><div class="pmk-mv-main"><span class="pmk-mav"><i data-lucide="user-round"></i></span><small>Claire Martin</small><span class="pmk-mv-self">You · sales rep</span></div><div class="pmk-mv-bar"><i><i data-lucide="mic"></i></i><i><i data-lucide="video"></i></i><i class="end"><i data-lucide="phone-off"></i></i></div></div>
+            <div class="pmk-mini pmk-mform below" style="--d:6.7s"><b class="pmk-mh">Sign-up · Webinar 2027</b><span class="pmk-mf"><small>Name</small><span><em class="pmk-type" style="--d:6.95s; --t:.35s; --n:13">Claire Martin</em></span></span><span class="pmk-mf"><small>Email</small><span><em class="pmk-type" style="--d:7.30s; --t:.4s; --n:22">c.martin@entreprise.fr</em></span></span><span class="pmk-mck"><i><b class="pmk-pop" style="--d:7.65s">✓</b></i>I agree to be contacted</span><span class="pmk-mb pmk-press" style="--d:7.75s">Register</span></div>
+            <div class="sfc-h"><span class="sfc-ic contact"><i data-lucide="contact"></i></span><div><div class="sfo-k">Contact</div><div class="lch-t">Claire Martin</div></div></div>
+            <div class="lch-s">its campaigns</div>
+            <div class="sx-chips">
+              <span class="chip2 pmk-pop" style="--d:1.75s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Trade show</span>
+              <span class="chip2 pmk-pop" style="--d:3.25s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Whitepaper</span>
+              <span class="chip2 sal pmk-pop" style="--d:4.75s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Video outreach</span>
+              <span class="chip2 pmk-pop" style="--d:8.05s"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span>
+            </div>
+          </div>
+          <div class="lc-arrow pmk-in" style="--d:4.95s"><span class="al">contact role</span><span class="aa pmk-flash" style="--d:5.15s">&rarr;</span></div>
+          <div class="sfo pmk-in" style="--d:5.2s">
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity #1</div><div class="sfo-n">Entreprise SA</div><div class="sfo-s">€48,000 · created</div></div></div>
+            <div class="sfo-lh ltv-lh"><span>Campaign Influence (<span data-pm-start="0" data-pm-at="5.5,5.8,6.1">3</span>)</span><span class="ltv-flock pmk-pop" style="--d:6.4s"><i data-lucide="lock"></i>Influence frozen</span></div>
+            <div class="sfo-list">
+                <div class="sfo-r pmk-row" style="--d:5.5s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Trade show</span><em>Claire Martin</em></div>
+                <div class="sfo-r pmk-row" style="--d:5.8s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Whitepaper</span><em>Claire Martin</em></div>
+                <div class="sfo-r pmk-row" style="--d:6.1s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Video outreach</span><em>Claire Martin</em></div>
+                <div class="sfo-r pmk-row ltv-no" style="--d:8.3s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span><em>not added</em></div>
+            </div>
+          </div>
+          <div class="lc-arrow pmk-in" style="--d:8.6s"><span class="al">next opportunity</span><span class="aa pmk-flash" style="--d:8.80s">&rarr;</span></div>
+          <div class="sfo sm pmk-in" style="--d:8.8s">
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity #2</div><div class="sfo-n">Entreprise SA</div><div class="sfo-s">upsell · €30,000</div></div></div>
+            <div class="sfo-lh">Campaign Influence (<span data-pm-start="0" data-pm-at="9.1">1</span>)</div>
+            <div class="sfo-list">
+                <div class="sfo-r pmk-row" style="--d:9.1s"><span><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Webinar 2027</span><em>Claire Martin</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="ltv-pill pmk-pop" style="--d:9.5s"><span>Customer value (LTV)</span><b data-pm-to="78000" data-pm-fmt="eur0" data-pm-delay="9.6" data-pm-dur=".8">€78,000</b><small>€48,000 + €30,000</small></div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== SALES TARGET AND ROI SHARE (the whole contract counts toward the target, the share measures ROI) ========== -->
+    <section class="slide" data-chapter="precisions" data-pm="obj">
+      <div class="kr-badge">
+        <div class="kl"><b>Proposal 2</b> · targets</div>
+        <div class="kh">Sales target</div>
+        <div class="ks">The whole contract counts toward the sales target, each campaign's share measures ROI.</div>
+      </div>
+      <div class="slide-inner insights">
+        <div class="obj">
+          <div class="obj-c pmk-in" style="--d:.1s">
+            <div class="sfo-h"><span class="sfo-ic tgt"><i data-lucide="target"></i></span><div><div class="sfo-k">Sales target</div><div class="sfo-n">Julie Bernard · Sales</div></div></div>
+            <div class="obj-big"><span>Counted toward her target</span><b data-pm-to="100000" data-pm-delay=".5" data-pm-dur="1" data-pm-fmt="eur0">€100,000</b></div>
+            <div class="obj-bar"><i class="tgt" style="--d:.5s"></i></div>
+            <div class="obj-r"><span>Opportunity</span><b>Entreprise SA</b></div><div class="obj-r"><span>Stage</span><b>Signed (P4)</b></div><div class="obj-r"><span>Share counted</span><b>100%</b></div><div class="obj-r"><span>Influencing campaigns</span><b>4</b></div>
+          </div>
+          <div class="obj-c obj-roi pmk-in" style="--d:1.2s">
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity · Campaign Influence (4)</div><div class="sfo-n">Entreprise SA</div></div></div>
+            <div class="obj-big"><span>Split across the campaigns</span><b data-rise="0,25000,50000,75000,100000" data-rise-at="1.8,2.1,2.4,2.7" data-pm-fmt="eur0">€100,000</b></div>
+            <div class="obj-h"><span>Campaign</span><span></span><span>Share</span><span>Cost</span><span>ROI</span></div><div class="obj-r roi pmk-row" style="--d:1.8s"><span class="obj-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</span><span class="pmk-team">Marketing</span><b>€25,000</b><span class="cost pmk-pop" style="--d:3.2s">÷&nbsp;€12,500</span><b class="roi-v pmk-pop" style="--d:3.4s">×2</b></div><div class="obj-r roi pmk-row" style="--d:2.1s"><span class="obj-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</span><span class="pmk-team par">Partner</span><b>€25,000</b><span class="cost pmk-pop" style="--d:3.4s">÷&nbsp;€5,000</span><b class="roi-v pmk-pop" style="--d:3.6s">×5</b></div><div class="obj-r roi pmk-row" style="--d:2.4s"><span class="obj-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting Q2</span><span class="pmk-team tel">Telepro</span><b>€25,000</b><span class="cost pmk-pop" style="--d:3.6s">÷&nbsp;€6,250</span><b class="roi-v pmk-pop" style="--d:3.8s">×4</b></div><div class="obj-r roi pmk-row" style="--d:2.7s"><span class="obj-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2026</span><span class="pmk-team sal">Sales</span><b>€25,000</b><span class="cost pmk-pop" style="--d:3.8s">÷&nbsp;€25,000</span><b class="roi-v pmk-pop" style="--d:4.0s">×1</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== FIRST-CAMPAIGN BONUS (weight 2 while it stays in the influence, equal split afterwards) ========== -->
+    <section class="slide" data-chapter="precisions" data-pm="bonus">
+      <div class="kr-badge">
+        <div class="kl"><b>Proposal 3</b> · credit</div>
+        <div class="kh">First-campaign bonus</div>
+        <div class="ks">The contact's first campaign counts double while it stays in the influence.</div>
+      </div>
+      <div class="slide-inner insights">
+        <div class="bns">
+          <div class="bns-c pmk-in" style="--d:.1s">
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Opportunity · signed 2026</div><div class="sfo-n">Entreprise SA</div></div><div class="spl-f"><span>TCV</span><b>€100,000</b></div></div>
+            <div class="bns-lh"><span>Campaign Influence (4)</span><span class="pmk-ok pmk-pop" style="--d:2.6s">Bonus ×2</span></div>
+            <div class="bns-r pmk-row first" style="--d:0.60s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</span><span class="pmk-team par">Partner</span><b data-rise="25000,40000" data-rise-at="2.6" data-pm-fmt="eur0">€40,000</b></div><div class="bns-m"><div class="roi-m"><i data-rise-bar data-rise="50,80" data-rise-at="2.6" style="width:80%"></i></div><span class="bns-slot"><span class="bns-b pmk-pop" style="--d:2s"><i data-lucide="flag"></i>1st campaign</span></span><em data-rise="25,40" data-rise-at="2.6" data-pm-fmt="pct">40%</em></div></div><div class="bns-r pmk-row" style="--d:0.85s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Barometer whitepaper</span><span class="pmk-team">Marketing</span><b data-rise="25000,20000" data-rise-at="2.6" data-pm-fmt="eur0">€20,000</b></div><div class="bns-m"><div class="roi-m"><i data-rise-bar data-rise="50,40" data-rise-at="2.6" style="width:40%"></i></div><span class="bns-slot"></span><em data-rise="25,20" data-rise-at="2.6" data-pm-fmt="pct">20%</em></div></div><div class="bns-r pmk-row" style="--d:1.10s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting Q2</span><span class="pmk-team tel">Telepro</span><b data-rise="25000,20000" data-rise-at="2.6" data-pm-fmt="eur0">€20,000</b></div><div class="bns-m"><div class="roi-m"><i data-rise-bar data-rise="50,40" data-rise-at="2.6" style="width:40%"></i></div><span class="bns-slot"></span><em data-rise="25,20" data-rise-at="2.6" data-pm-fmt="pct">20%</em></div></div><div class="bns-r pmk-row" style="--d:1.35s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2026</span><span class="pmk-team sal">Sales</span><b data-rise="25000,20000" data-rise-at="2.6" data-pm-fmt="eur0">€20,000</b></div><div class="bns-m"><div class="roi-m"><i data-rise-bar data-rise="50,40" data-rise-at="2.6" style="width:40%"></i></div><span class="bns-slot"></span><em data-rise="25,20" data-rise-at="2.6" data-pm-fmt="pct">20%</em></div></div>
+          </div>
+          <div class="bns-c later pmk-in" style="--d:3.6s">
+            <div class="sfo-h"><span class="sfo-ic"><i data-lucide="crown"></i></span><div><div class="sfo-k">Renewal · two years later</div><div class="sfo-n">Entreprise SA</div></div><div class="spl-f"><span>TCV</span><b>€100,000</b></div></div>
+            <div class="bns-lh"><span>Campaign Influence (4)</span><span class="pmk-ok pmk-pop" style="--d:5.6s">Equal split</span></div>
+            <div class="bns-r pmk-row off" style="--d:4.00s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner breakfast</span><span class="pmk-team par">Partner</span><b></b></div><div class="bns-m"><span class="bns-x pmk-pop" style="--d:5s">Outside the 365-day window</span></div></div><div class="bns-r pmk-row" style="--d:4.25s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Absenteeism webinar 2028</span><span class="pmk-team">Marketing</span><b>€25,000</b></div><div class="bns-m"><div class="roi-m"><i style="width:50%; --d:4.45s"></i></div><span class="bns-slot"></span><em>25%</em></div></div><div class="bns-r pmk-row" style="--d:4.50s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Partner trade show 2028</span><span class="pmk-team par">Partner</span><b>€25,000</b></div><div class="bns-m"><div class="roi-m"><i style="width:50%; --d:4.70s"></i></div><span class="bns-slot"></span><em>25%</em></div></div><div class="bns-r pmk-row" style="--d:4.75s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>SDR prospecting 2028</span><span class="pmk-team tel">Telepro</span><b>€25,000</b></div><div class="bns-m"><div class="roi-m"><i style="width:50%; --d:4.95s"></i></div><span class="bns-slot"></span><em>25%</em></div></div><div class="bns-r pmk-row" style="--d:5.00s"><div class="bns-t"><span class="bns-n"><i class="pmk-camp"><i data-lucide="megaphone"></i></i>Target accounts 2028</span><span class="pmk-team sal">Sales</span><b>€25,000</b></div><div class="bns-m"><div class="roi-m"><i style="width:50%; --d:5.20s"></i></div><span class="bns-slot"></span><em>25%</em></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+  </main>
+
+  <!-- Keyboard Hint -->
+  <div class="keyboard-hint">
+    <span><span class="key" id="key-prev">←</span><span class="key" id="key-next">→</span> Navigate</span>
+    <span><span class="key" id="key-fullscreen">F</span> Fullscreen</span>
+  </div>
+
+  <!-- Author credit -->
+  <div class="deck-credit">José J Encarnación Saiter | Marketing France · 2026-06</div>
+
+  <script src="https://ayming-france.github.io/assets/engine/slides.js"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+  <script>
+    (function () {
+      var cover = document.querySelector('.slide.cover');
+      var credit = document.querySelector('.deck-credit');
+      if (!cover || !credit) return;
+      var sync = function () {
+        credit.style.visibility = cover.classList.contains('active') ? 'hidden' : 'visible';
+      };
+      sync();
+      new MutationObserver(sync).observe(cover, { attributes: true, attributeFilter: ['class'] });
+    })();
+  </script>
+  <script>
+    /* Motion layer: count-ups, the Power BI slicer mockup and the pyramid flights.
+       Each slide's timers start when it becomes active and are cleared when it leaves. */
+    (function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var lang = (document.documentElement.lang || 'fr').slice(0, 2);
+      var NB = String.fromCharCode(160);
+      var timers = new WeakMap();
+
+      function fmt(v, kind) {
+        if (kind === 'r1' || kind === 'coef') { var y = (Math.round(v * 10) / 10).toFixed(1).replace(/\.0$/, ''); if (lang === 'fr') y = y.replace('.', ',');
+          if (kind === 'r1') return y;
+          return '×' + y; }
+        if (kind === 'pct') return Math.round(v) + (lang === 'fr' ? NB + '%' : '%');
+        if (kind === 'eur0') { var e = String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, lang === 'fr' ? NB : ','); return lang === 'fr' ? e + NB + '€' : '€' + e; }
+        if (kind === 'pct1') { var p = v.toFixed(1); return (lang === 'fr' ? p.replace('.', ',') + NB : p) + '%'; }
+        if (kind === 'eur') {
+          var m = (v / 1e6).toFixed(1);
+          return lang === 'fr' ? m.replace('.', ',') + NB + 'M€' : '€' + m + 'M';
+        }
+        return String(Math.round(v)).replace(/\B(?=(\d{3})+(?!\d))/g, lang === 'fr' ? NB : ',');
+      }
+      function later(slide, ms, fn) {
+        var list = timers.get(slide) || [];
+        list.push(setTimeout(fn, reduce ? 0 : ms));
+        timers.set(slide, list);
+      }
+      function stop(slide) {
+        (timers.get(slide) || []).forEach(clearTimeout);
+        timers.set(slide, []);
+        slide.querySelectorAll('.pmk-ghost').forEach(function (g) { g.remove(); });
+      }
+      function countUp(el, from, to, delayS, durS, kind, slide) {
+        if (reduce) { el.textContent = fmt(to, kind); el.dataset.cur = to; return; }
+        el.textContent = fmt(from, kind);
+        later(slide, delayS * 1000, function () {
+          var t0 = performance.now(), dur = durS * 1000;
+          (function step(now) {
+            var p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+            el.textContent = fmt(from + (to - from) * e, kind);
+            if (p < 1 && slide.classList.contains('active')) requestAnimationFrame(step);
+            else el.textContent = fmt(to, kind);
+          })(t0);
+        });
+        el.dataset.cur = to;
+      }
+
+      /* ---- rising ratio: each signed contract steps the influenced TCV, the ratio and its bar ---- */
+      function rise(slide) {
+        slide.querySelectorAll('[data-rise]').forEach(function (el) {
+          var v = el.dataset.rise.split(',').map(parseFloat), at = el.dataset.riseAt.split(',').map(parseFloat);
+          var kind = el.dataset.pmFmt || 'eur0', bar = el.hasAttribute('data-rise-bar');
+          var show = function (x) { if (bar) el.style.width = x + '%'; else el.textContent = fmt(x, kind); };
+          if (reduce) { show(v[v.length - 1]); return; }
+          if (bar) { el.style.transition = 'none'; show(v[0]); void el.offsetWidth; el.style.transition = ''; } else show(v[0]);
+          at.forEach(function (s, i) {
+            later(slide, s * 1000, function () {
+              if (bar) { show(v[i + 1]); return; }
+              var from = v[i], to = v[i + 1], t0 = performance.now();
+              (function step(now) {
+                var p = Math.min(1, (now - t0) / 700), e = 1 - Math.pow(1 - p, 3);
+                el.textContent = fmt(from + (to - from) * e, kind);
+                if (p < 1 && slide.classList.contains('active')) requestAnimationFrame(step);
+                else el.textContent = fmt(to, kind);
+              })(t0);
+            });
+          });
+        });
+      }
+
+      /* ---- Power BI mockup of the Conversions page: illustrative values, All is the sum of the channels ---- */
+      var PCH = { organic: ['Organic Search', '#38a9e0'], sea: ['Paid Search', '#2457d6'], social: ['Paid Social', '#a855f7'],
+        llm: ['AI / LLM', '#14b8a6'], aff: ['Affiliate', '#f59e0b'], off: ['Offline', '#64748b'] };
+      var PKEYS = Object.keys(PCH);
+      var PFUN = { organic: [760, 230, 190, 160, 52, 18], sea: [350, 120, 98, 82, 30, 10], social: [490, 110, 85, 70, 22, 7],
+        llm: [120, 40, 33, 28, 10, 4], aff: [1150, 300, 230, 190, 48, 14], off: [520, 190, 160, 140, 60, 25] };
+      var PMON = { organic: [80, 95, 110, 120, 130, 140, 85], sea: [40, 45, 50, 55, 60, 65, 35], social: [60, 70, 65, 75, 80, 90, 50],
+        llm: [5, 8, 12, 18, 25, 32, 20], aff: [150, 280, 120, 160, 140, 210, 90], off: [30, 110, 60, 90, 70, 120, 40] };
+      var PMONTHS = ['Jan 2026', 'Feb 2026', 'Mar 2026', 'Apr 2026', 'May 2026', 'Jun 2026', 'Jul 2026'];
+      function pfun(ch) {
+        if (ch !== 'all') return PFUN[ch];
+        return PFUN.organic.map(function (_, i) { return PKEYS.reduce(function (a, k) { return a + PFUN[k][i]; }, 0); });
+      }
+      function pbiBuild(slide) {
+        var cols = slide.querySelector('.pbi-cols'), months = slide.querySelector('.pbi-months');
+        var leg = slide.querySelector('.pbi-leg'), menu = slide.querySelector('.pbi-menu');
+        PMONTHS.forEach(function (m) {
+          var c = document.createElement('div');
+          c.className = 'pbi-col';
+          PKEYS.forEach(function (k) {
+            var s = document.createElement('div');
+            s.className = 'pbi-seg';
+            s.style.background = PCH[k][1];
+            c.appendChild(s);
+          });
+          cols.appendChild(c);
+          var l = document.createElement('span');
+          l.textContent = m;
+          months.appendChild(l);
+        });
+        PKEYS.forEach(function (k) {
+          leg.insertAdjacentHTML('beforeend', '<span><i style="background:' + PCH[k][1] + '"></i>' + PCH[k][0] + '</span>');
+          menu.insertAdjacentHTML('beforeend', '<button type="button" data-ch="' + k + '">' + PCH[k][0] + '</button>');
+        });
+      }
+      function pbiRender(slide, ch, fromZero) {
+        var f = pfun(ch);
+        slide.querySelectorAll('.pbi-st b').forEach(function (el, i) {
+          countUp(el, fromZero ? 0 : parseFloat(el.dataset.cur || 0), f[i], fromZero ? .3 + .1 * i : 0, .7, 'int', slide);
+        });
+        slide.querySelectorAll('.pbi-rates b').forEach(function (el, i) { el.textContent = fmt(f[i + 1] / f[i] * 100, 'pct1'); });
+        var keys = ch === 'all' ? PKEYS : [ch];
+        var tot = PMONTHS.map(function (_, m) { return keys.reduce(function (a, k) { return a + PMON[k][m]; }, 0); });
+        var max = Math.max.apply(null, tot);
+        if (fromZero) slide.querySelectorAll('.pbi-seg').forEach(function (s) { s.style.transition = 'none'; s.style.height = '0'; });
+        void slide.offsetWidth;
+        slide.querySelectorAll('.pbi-col').forEach(function (col, m) {
+          col.querySelectorAll('.pbi-seg').forEach(function (s, j) {
+            s.style.transition = fromZero ? 'height .7s cubic-bezier(.2,.7,.2,1) ' + (.8 + m * .08) + 's' : '';
+            s.style.height = (keys.indexOf(PKEYS[j]) < 0 ? 0 : PMON[PKEYS[j]][m] / max * 100) + '%';
+          });
+        });
+        slide.querySelector('.pbi-cur').textContent = ch === 'all' ? 'All' : PCH[ch][0];
+        slide.querySelectorAll('.pbi-menu button').forEach(function (b) { b.classList.toggle('on', b.dataset.ch === ch); });
+      }
+      document.querySelectorAll('.slide[data-pm="pbi"]').forEach(function (slide) {
+        pbiBuild(slide);
+        var dd = slide.querySelector('.pbi-dd');
+        slide.querySelector('.pbi-sel').addEventListener('click', function (ev) { ev.stopPropagation(); dd.classList.toggle('open'); });
+        slide.querySelector('.pbi-menu').addEventListener('click', function (ev) {
+          ev.stopPropagation();
+          var b = ev.target.closest('button');
+          if (!b) return;
+          dd.classList.remove('open');
+          pbiRender(slide, b.dataset.ch, false);
+        });
+        document.addEventListener('click', function () { dd.classList.remove('open'); });
+        pbiRender(slide, 'all', true);
+      });
+
+      /* ---- Pyramid: circled metrics fly into the KPI they feed, KPI fly into the OKR ---- */
+      var MET_TO_KPI = [[9, 1], [10, 1], [11, 0], [8, 2], [6, 2]];
+      function fly(root, src, dst, delay) {
+        var k = root.getBoundingClientRect().width / root.offsetWidth || 1;
+        var r0 = root.getBoundingClientRect(), a = src.getBoundingClientRect(), b = dst.getBoundingClientRect();
+        var g = src.cloneNode(true);
+        g.classList.add('pmk-ghost');
+        g.style.left = (a.left - r0.left) / k + 'px';
+        g.style.top = (a.top - r0.top) / k + 'px';
+        g.style.width = a.width / k + 'px';
+        root.appendChild(g);
+        var dx = (b.left + b.width / 2 - a.left - a.width / 2) / k, dy = (b.top + b.height / 2 - a.top - a.height / 2) / k;
+        var anim = g.animate([
+          { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+          { transform: 'translate(' + dx + 'px, ' + dy + 'px) scale(.75)', opacity: 1, offset: .85 },
+          { transform: 'translate(' + dx + 'px, ' + dy + 'px) scale(.6)', opacity: 0 }
+        ], { duration: 850, delay: delay, easing: 'cubic-bezier(.5, 0, .3, 1)', fill: 'both' });
+        anim.onfinish = function () { g.remove(); };
+      }
+      function pyramid(slide) {
+        if (reduce) return;
+        var root = slide.querySelector('.pyramid');
+        var met = root.querySelectorAll('.tier.met .tchip'), kpi = root.querySelectorAll('.tier.kpi .tchip');
+        var okr = root.querySelector('.tier.okr .tcontent');
+        later(slide, 1900, function () { MET_TO_KPI.forEach(function (p, i) { fly(root, met[p[0]], kpi[p[1]], i * 70); }); });
+        later(slide, 3700, function () { [0, 1, 2].forEach(function (i) { fly(root, kpi[i], okr, i * 90); }); });
+      }
+
+      function enter(slide) {
+        slide.querySelectorAll('[data-pm-to]').forEach(function (el) {
+          countUp(el, 0, parseFloat(el.dataset.pmTo), parseFloat(el.dataset.pmDelay || 0),
+            parseFloat(el.dataset.pmDur || 1), el.dataset.pmFmt || 'int', slide);
+        });
+        slide.querySelectorAll('[data-pm-at]').forEach(function (el) {
+          var start = parseInt(el.dataset.pmStart || '0', 10), at = el.dataset.pmAt.split(',');
+          if (reduce) { el.textContent = start + at.length; return; }
+          el.textContent = start;
+          at.forEach(function (s, i) { later(slide, parseFloat(s) * 1000, function () { el.textContent = start + i + 1; }); });
+        });
+        var kind = slide.dataset.pm;
+        if (kind === 'pbi') {
+          slide.querySelector('.pbi-dd').classList.remove('open');
+          /* empty the bars and the funnel at once, or the last render shows full until the delayed redraw */
+          slide.querySelectorAll('.pbi-seg').forEach(function (s) { s.style.transition = 'none'; s.style.height = '0'; });
+          slide.querySelectorAll('.pbi-st b').forEach(function (el) { el.textContent = fmt(0, 'int'); });
+          later(slide, 250, function () { pbiRender(slide, 'all', true); });
+        }
+        if (kind === 'pyr') pyramid(slide);
+        if (kind === 'rise' || kind === 'obj' || kind === 'bonus') rise(slide);
+      }
+
+      document.querySelectorAll('.slide[data-pm]').forEach(function (slide) {
+        var was = slide.classList.contains('active');
+        if (was) enter(slide);
+        new MutationObserver(function () {
+          var now = slide.classList.contains('active');
+          if (now && !was) enter(slide);
+          if (!now && was) stop(slide);
+          was = now;
+        }).observe(slide, { attributes: true, attributeFilter: ['class'] });
+      });
+    })();
+  </script>
+
+  <script>
+    /* Dividers: on the slide after a divider, the divider's block flies into that slide's badge;
+       on the KR2 divider, KR1 flies back from its badge and settles at half opacity */
+    (function () {
+      var slides = [].slice.call(document.querySelectorAll('.slide'));
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var geo = new WeakMap();
+      var EASE = 'cubic-bezier(.5, 0, .3, 1)';
+      /* layout position inside the slide, free of any running transform */
+      function box(el) { var b = el.getBoundingClientRect(); return { x: b.left, y: b.top, w: b.width, h: b.height }; }
+      /* snapshot of the divider blocks on screen, taken once they have settled and again on the input that leaves */
+      function remember(div) {
+        geo.set(div, [].map.call(div.querySelectorAll('[data-fly]'), function (el) {
+          return { el: el, look: look(el), op: parseFloat(getComputedStyle(el).opacity) };
+        }));
+      }
+      ['keydown', 'pointerdown', 'wheel', 'touchstart'].forEach(function (ev) {
+        window.addEventListener(ev, function () { if (cur && cur.hasAttribute('data-div')) remember(cur); }, true);
+      });
+      /* a block or a badge on screen: its rectangle and its layout width, read while it is laid out */
+      function look(el) { var k = el.classList.contains('kr-snap') ? el.querySelector('.kr') : el; return { r: box(k), W: k.offsetWidth }; }
+      /* a copy of the block moves and scales as one picture; only its frame narrows to the badge's width */
+      function snap(s, src, A, B, opA, opB, dur) {
+        var c = src.cloneNode(true);
+        c.className = (src.classList.contains('okr-obj') ? 'okr-obj' : 'kr') + ' kr-ghost';
+        ['data-fly', 'data-back', 'style'].forEach(function (a) { c.removeAttribute(a); });
+        c.setAttribute('aria-hidden', 'true');
+        c.style.cssText = 'left:0;top:0;width:100px;white-space:nowrap';
+        s.appendChild(c);
+        var o = box(c), kg = o.w / 100;
+        c.style.left = (A.r.x - o.x) / kg + 'px'; c.style.top = (A.r.y - o.y) / kg + 'px';
+        var t0 = A.r.w / (A.W * kg), t1 = B.r.w / (B.W * kg);
+        var dx = (B.r.x - A.r.x) / kg, dy = (B.r.y - A.r.y) / kg;
+        var a = c.animate([
+          { width: A.W + 'px', transform: 'translate(0px, 0px) scale(' + t0 + ')', opacity: opA },
+          { width: B.W + 'px', transform: 'translate(' + dx + 'px, ' + dy + 'px) scale(' + t1 + ')', opacity: opB }
+        ], { duration: dur, easing: dur > 500 ? EASE : 'ease', fill: 'both' });
+        a.onfinish = function () { c.remove(); };
+        return a;
+      }
+      function forward(div, s) {
+        var g = geo.get(div), badge = s.querySelector('.kr-badge');
+        if (!g || !badge) return;
+        g.forEach(function (it) {
+          if (it.el.dataset.fly !== s.dataset.pm) { snap(s, it.el, it.look, it.look, it.op, 0, 450); return; }
+          snap(s, it.el, it.look, look(badge), it.op, 1, 900);
+          badge.animate([{ opacity: 0 }, { opacity: 0 }], { duration: 900 });
+        });
+      }
+      /* KR1 returns from its badge: a hidden copy of the KR1 badge, measured on the divider */
+      function badgeLook(div) {
+        var p = document.querySelector('.slide[data-pm="capture"] .kr-badge').cloneNode(true);
+        p.style.visibility = 'hidden';
+        div.appendChild(p);
+        var L = look(p); p.remove();
+        return L;
+      }
+      function enterDiv(div, fromPrev) {
+        setTimeout(function () { if (div === cur) remember(div); }, 1000);
+        if (reduce || !fromPrev) return;
+        var back = div.querySelector('[data-back]');
+        if (back) {
+          snap(div, back, badgeLook(div), look(back), 1, .5, 900);
+          back.animate([{ opacity: 0 }, { opacity: 0 }], { duration: 900 });
+          div.querySelectorAll('.okr-obj, .kr:not([data-back])').forEach(function (el) {
+            el.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500, delay: 250, easing: 'ease', fill: 'backwards' });
+          });
+        }
+      }
+      var cur = document.querySelector('.slide.active');
+      var mo = new MutationObserver(function () {
+        var now = document.querySelector('.slide.active');
+        if (!now || now === cur) return;
+        var prev = cur; cur = now;
+        slides.forEach(function (s) { if (s !== now) s.querySelectorAll('.kr-ghost').forEach(function (g) { g.remove(); }); });
+        var i = slides.indexOf(now), j = slides.indexOf(prev);
+        if (!reduce && prev && prev.hasAttribute('data-div') && j === i - 1) forward(prev, now);
+        if (now.hasAttribute('data-div')) enterDiv(now, j === i - 1);
+      });
+      slides.forEach(function (s) { mo.observe(s, { attributes: true, attributeFilter: ['class'] }); });
+      if (cur && cur.hasAttribute('data-div')) enterDiv(cur, false);
+    })();
+  </script>
+</body>
+</html>
