@@ -903,6 +903,12 @@
       background: #fff7ed; color: #b4521f; border: 1px solid #f6c9a8; border-radius: 999px; padding: 6px 14px; font-family: Lato, sans-serif;
       font-size: 12px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; box-shadow: 0 2px 8px rgba(0,0,0,.06); pointer-events: none; }
     .val-flag small { font-size: 11px; font-weight: 600; letter-spacing: 0; text-transform: none; color: #9a5a2e; }
+    .slide.val-end { background: linear-gradient(90deg, #00aeef, #00b08b); }
+    .slide-inner.val-end-in { position: absolute; inset: 0; max-width: none; padding: 0; transform: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; color: #fff; text-align: center; }
+    .val-end-logo { height: 54px; filter: brightness(0) invert(1); }
+    .val-end-t { font-size: 54px; font-weight: 800; color: #fff; margin: 0; line-height: 1.1; }
+    .val-end-who b { display: block; font-size: 21px; font-weight: 800; margin-bottom: 6px; }
+    .val-end-who a { color: #fff; font-size: 17px; font-weight: 500; text-decoration: none; opacity: .92; }
     .val-div .slide-inner { justify-content: center; }
     .val-div .slide-title { margin-bottom: 14px; }
     .val-div .slide-subtitle { margin: 0 auto; text-align: center; }
@@ -935,10 +941,11 @@
       <div class="nav-item" data-slide="7"><span class="nav-item-number">08</span>Influence figée, valeur client</div>
       <div class="nav-item" data-slide="8"><span class="nav-item-number">09</span>Objectif et part du ROI</div>
       <div class="nav-item" data-slide="9"><span class="nav-item-number">10</span>Prime à la première campagne</div>
+      <div class="nav-item" data-slide="10"><span class="nav-item-number">11</span>Des questions ?</div>
     </div>
   </nav>
 
-  <div class="slide-counter"><span class="current">1</span>/10</div>
+  <div class="slide-counter"><span class="current">1</span>/11</div>
 
   <div class="val-flag" role="note">À valider <small>· Version de travail</small></div>
   <main class="presentation">
@@ -1184,6 +1191,15 @@
         </div>
       </div>
       <div class="company-logo"><img src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming"></div>
+    </section>
+
+    <!-- ========== CLOSING, QUESTIONS AND CONTACT ========== -->
+    <section class="slide cover val-end" data-chapter="questions">
+      <div class="slide-inner val-end-in">
+        <img class="val-end-logo" src="https://raw.githubusercontent.com/ayming-france/assets/main/logos/ayming-logo.png" alt="Ayming">
+        <h1 class="val-end-t">Des questions&nbsp;?</h1>
+        <div class="val-end-who"><b>José J Encarnación Saiter</b><a href="mailto:jencarnacion@ayming.com">jencarnacion@ayming.com</a></div>
+      </div>
     </section>
 
   </main>
